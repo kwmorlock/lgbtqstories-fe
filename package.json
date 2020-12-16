@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kwmorlock/lgbtqstories-fe/issues"
   },
-  "homepage": "https://github.com/kwmorlock/lgbtqstories-fe#readme"
+  "homepage": "https://github.com/kwmorlock/lgbtqstories-fe#readme",
+  "dependencies": {
+    "react": "^17.0.1"
+  }
 }
