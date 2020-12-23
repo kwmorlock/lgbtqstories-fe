@@ -72,6 +72,7 @@ const Register = (props) => {
       <div className="register">Register</div>
 
       <form onSubmit={regSubmit}>
+        <label for="username">Username</label>
         <input
           type="text"
           id="username"

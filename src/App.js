@@ -6,13 +6,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <p>Hello</p>
-      <Switch>
-        <Route path="/api/users/auth/register" component={Register} />
-      </Switch>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <p>Hello</p>
+        <Switch>
+          <Route path="/register" component={Register} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
