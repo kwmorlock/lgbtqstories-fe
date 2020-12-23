@@ -92,6 +92,16 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
+          <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          placeholder="email"
+          name="email"
+          value={userData.email}
+          onChange={inputChange}
+          required
+        />
         <button disabled={buttonDisabled} type="submit">
           Register
         </button>
