@@ -82,6 +82,9 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
+        <button disabled={buttonDisabled} type="submit">
+          Register
+        </button>
       </form>
     </>
   );
