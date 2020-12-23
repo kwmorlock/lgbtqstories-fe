@@ -8,4 +8,10 @@ const Register = (props) => {
     password: "",
     email: "",
   });
+
+  const regFormSchema = yup.object().shape({
+    username: yup.string().required("Please enter your username!"),
+    password: yup.string().required("Please enter your password!"),
+    email: yup.string().required("Please enter your email!"),
+  });
 };
