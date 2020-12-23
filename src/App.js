@@ -2,17 +2,15 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Register from "./components/UserReg";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-        <p>Hello</p>
-        <Switch>
-          <Route path="/register" component={Register} />
-        </Switch>
+        <p>Welcome</p>
+        <Route path="/register" component={Register} />
       </div>
     </Router>
   );
