@@ -14,4 +14,10 @@ const Register = (props) => {
     password: yup.string().required("Please enter your password!"),
     email: yup.string().required("Please enter your email!"),
   });
+
+  const [errors, setErrors] = useState({
+    username: "",
+    password: "",
+    email: "",
+  });
 };
