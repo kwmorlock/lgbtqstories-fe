@@ -47,5 +47,10 @@ const Register = (props) => {
   };
 
   const [buttonDisabled, setButtonDisabled] = useState(true);
-  
+
+  useEffect(() => {
+    regFormSchema.isValid(userData).then((valid) => {
+      setButtonDisabled(!valid);
+    });
+  }, [userData, regFormSchema]);
 };
