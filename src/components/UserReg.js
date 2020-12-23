@@ -35,4 +35,14 @@ const Register = (props) => {
         });
       });
   };
+
+  const inputChange = (e) => {
+    e.persist();
+    const newFormData = {
+      ...userData,
+      [e.target.name]: e.target.value,
+    };
+    formValidation(e);
+    setUserData(newFormData);
+  };
 };
