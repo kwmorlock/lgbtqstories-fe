@@ -53,4 +53,18 @@ const Register = (props) => {
       setButtonDisabled(!valid);
     });
   }, [userData, regFormSchema]);
+
+  const regSubmit = (e) => {
+    e.preventDefault();
+    axiosWithAuth()
+      .post(
+        "https://lgbtqstories.herokuapp.com/api/users/auth/register",
+        userData
+      )
+      .then((res) => {
+        localStorage.setItem("id", res.data.usersId);
+        props.history.push("/api/users/auth/login");
+      })
+      .catch((err) => console.log("User registration Error:", err.message));
+  };
 };
