@@ -67,4 +67,9 @@ const Register = (props) => {
       })
       .catch((err) => console.log("User registration Error:", err.message));
   };
+  return (
+    <>
+      <div className="register">Register</div>
+    </>
+  );
 };
