@@ -70,6 +70,18 @@ const Register = (props) => {
   return (
     <>
       <div className="register">Register</div>
+
+      <form onSubmit={regSubmit}>
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          name="username"
+          value={userData.username}
+          onChange={inputChange}
+          required
+        />
+      </form>
     </>
   );
 };
