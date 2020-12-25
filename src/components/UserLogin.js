@@ -46,6 +46,12 @@ const Login = (props) => {
   };
 
   const [buttonDisabled, setButtonDisabled] = useState(true);
+
+  useEffect(() => {
+    loginFormSchema.isValid(userData).then((valid) => {
+      setButtonDisabled(!valid);
+    });
+  }, [userData, loginFormSchema]);
 };
 
 export default Login;
