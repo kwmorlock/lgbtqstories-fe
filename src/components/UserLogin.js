@@ -98,6 +98,9 @@ const Login = (props) => {
           onChange={inputChange}
           required
         />
+        <button disabled={buttonDisabled} type="submit">
+          Login
+        </button>
       </form>
     </>
   );
