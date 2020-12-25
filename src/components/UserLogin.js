@@ -78,6 +78,16 @@ const Login = (props) => {
           onChange={inputChange}
           required
         />
+        <label for="password">Password</label>
+        <input
+          type="text"
+          id="password"
+          placeholder="password"
+          name="password"
+          value={userData.password}
+          onChange={inputChange}
+          required
+        />
       </form>
     </>
   );
