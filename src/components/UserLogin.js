@@ -67,7 +67,18 @@ const Login = (props) => {
     <>
       <div className="login">Login</div>
 
-      <form onSubmit={loginSubmit}></form>
+      <form onSubmit={loginSubmit}>
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          name="username"
+          value={userData.username}
+          onChange={inputChange}
+          required
+        />
+      </form>
     </>
   );
 };
