@@ -52,6 +52,17 @@ const Login = (props) => {
       setButtonDisabled(!valid);
     });
   }, [userData, loginFormSchema]);
+
+  const loginSubmit = (e) => {
+    e.preventDefault();
+    axiosWithAuth()
+      .post("api/users/auth/login", userData)
+      .then((res) => {
+        localStorage.setItem("token", res.data.token);
+        props.history.push("api/stories");
+      })
+      .catch((err) => console.log("User Login Error:", err.message));
+  };
 };
 
 export default Login;
