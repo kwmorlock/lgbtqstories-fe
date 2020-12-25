@@ -63,7 +63,7 @@ const Register = (props) => {
       )
       .then((res) => {
         localStorage.setItem("id", res.data.usersId);
-        props.history.push("/api/users/auth/login");
+        props.history.push("/login");
       })
       .catch((err) => console.log("User registration Error:", err.message));
   };
