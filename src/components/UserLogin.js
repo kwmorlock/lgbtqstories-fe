@@ -8,6 +8,11 @@ const Login = (props) => {
     password: "",
     email: "",
   });
+  const loginFormSchema = yup.object().shape({
+    username: yup.string().required("Please enter your username!"),
+    password: yup.string().required("Please enter your password!"),
+    email: yup.string().required("Please enter your email!"),
+  });
 };
 
 export default Login;
