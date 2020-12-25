@@ -15,4 +15,10 @@ const Login = (props) => {
   });
 };
 
+const [errors, setErrors] = useState({
+  username: "",
+  password: "",
+  email: "",
+});
+
 export default Login;
