@@ -11,14 +11,14 @@ const UserStories = (props) => {
   };
 
   useEffect(() => {
-    authentication()
+    axiosWithAuth()
       .get(`/api/stories/`)
       .then((res) => {
         setStories(
           res.data.filter((story) => {
             if (searchTag === "") {
               return story;
-            } else if (story.title === searchTag || story.tag === searchTag) {
+            } else if (story.title === searchTag || story.tags === searchTag) {
               return story;
             } else {
               return null;
