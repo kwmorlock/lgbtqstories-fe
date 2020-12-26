@@ -18,7 +18,10 @@ const UserStories = (props) => {
           res.data.filter((story) => {
             if (searchTag === "") {
               return story;
-            } else if (story.title === searchTag || story.tags === searchTag) {
+            } else if (
+              story.title.toLowerCase().includes(searchTag.toLowerCase()) ||
+              story.tags.toLowerCase().includes(searchTag.toLowerCase())
+            ) {
               return story;
             } else {
               return null;
