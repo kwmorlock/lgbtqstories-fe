@@ -28,6 +28,34 @@ const UserStories = (props) => {
       })
       .catch((err) => console.log("search not working", err));
   }, [searchTag]);
+  return (
+    <>
+      <div>
+        <div>
+          <form>
+            <input
+              onChange={changeHandler}
+              type="text"
+              placeholder="search"
+              value={searchTag}
+            />
+          </form>
+        </div>
+
+        <div>
+          {stories.map((stories) => (
+            <div key={stories.id}>
+              <div key={stories.id}>
+                <p>Title: {stories.title}</p>
+                <p>Story: {stories.story}</p>
+                <p>Tags: {stories.tags}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default UserStories;
