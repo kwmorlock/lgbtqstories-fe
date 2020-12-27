@@ -21,13 +21,37 @@ const PostStories = (props) => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     axiosWithAuth()
-    .post(`/api/stories/`, addedStory)
-    .then(res=>{
-      setAddedStory(res.data.story);
-    })
-    .catch(err=>console.log(err, 'failed'))
+      .post(`/api/stories/`, addedStory)
+      .then((res) => {
+        setAddedStory(res.data.story);
+      })
+      .catch((err) => console.log(err, "failed"));
     props.history.push("/api/stories");
   };
+
+  return (
+    <>
+      <div>
+        <div>
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label for="title">Story Title</label>
+              <input
+                type="text"
+                name="title"
+                id="title"
+                placeholder="title"
+                onChange={handleChange}
+                value={addedStory.title}
+              />
+
+              <button type="submit">Add Story</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
+  );
 };
