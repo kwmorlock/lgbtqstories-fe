@@ -8,3 +8,9 @@ const initialStory = {
   tags: "",
   usersId: "",
 };
+
+const UserStory = (props) => {
+  const [stories, setStories] = useState([]);
+  const [edit, setEdit] = useState(false);
+  const [storyToEdit, setStoryToEdit] = useState(initialStory);
+};
