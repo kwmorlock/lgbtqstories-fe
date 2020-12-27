@@ -14,7 +14,7 @@ const PostStories = (props) => {
   const [addedStory, setAddedStory] = useState(initialState);
 
   useEffect(() => {
-    fetch(`/api/stories/${storyId}`, addedStory)
+    fetch(`/api/stories/${storyId}`)
       .then((res) => res.json())
       .then((result) => setAddedStory(result.data))
       .catch((err) => console.log('error'))
