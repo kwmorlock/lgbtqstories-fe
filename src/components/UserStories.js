@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { Link } from "react-router-dom";
 
 const initialStory = {
   id: null,
@@ -57,7 +58,16 @@ const UserStory = (props) => {
   return (
     <>
       <div>
-          <p>hello</p>
+      <div
+          style={{
+            margin: "20px auto",
+            width: "10%",
+            backgroundColor: "hotpink",
+            border: "3px solid purple",
+          }}
+        >
+          <Link to="/stories">All Stories</Link>
+        </div>
         <div>
           {stories.map((stories) => (
             <div
