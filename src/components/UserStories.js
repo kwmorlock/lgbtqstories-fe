@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
-import UserStories from "./Stories";
 
 const initialStory = {
   id: null,
@@ -17,7 +16,7 @@ const UserStory = (props) => {
 
   useEffect(() => {
     axiosWithAuth()
-      .get(`/api/stories/${localStorage.getItem("id")}`)
+      .get(`/api/stories/user/${localStorage.getItem("id")}`)
       .then((res) => {
         setStories(res.data);
       })
@@ -58,6 +57,7 @@ const UserStory = (props) => {
   return (
     <>
       <div>
+          <p>hello</p>
         <div>
           {stories.map((stories) => (
             <div
@@ -114,4 +114,4 @@ const UserStory = (props) => {
   );
 };
 
-export default UserStories;
+export default UserStory;

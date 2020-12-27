@@ -7,7 +7,7 @@ import PrivateRoute from "./utils/privateRoute";
 import UserStories from "./components/Stories";
 import PostStories from "./components/PostStories"
 import UserStory from "./components/UserStories"
-import { HashRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -15,11 +15,14 @@ function App() {
       <div className="App">
         <Header />
         <p>Welcome</p>
+        <Switch>
         <Route path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
+        <PrivateRoute path="/stories/edit" component={UserStory} />
         <PrivateRoute path="/stories/add" component={PostStories} />
         <PrivateRoute path="/stories" component={UserStories} />
-        <PrivateRoute path="/stories/edit" component={UserStory} />
+       
+        </Switch>
       </div>
     </Router>
   );
