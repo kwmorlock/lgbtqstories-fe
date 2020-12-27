@@ -19,4 +19,15 @@ const PostStories = (props) => {
       [e.target.name]: e.target.value,
     });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    axiosWithAuth()
+    .post(`/api/stories/`, addedStory)
+    .then(res=>{
+      setAddedStory(res.data.story);
+    })
+    .catch(err=>console.log(err, 'failed'))
+    props.history.push("/api/stories");
+  };
 };
