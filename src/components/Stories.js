@@ -47,7 +47,15 @@ const UserStories = (props) => {
 
         <div>
           {stories.map((stories) => (
-            <div key={stories.id} style={{ margin: "20px auto", width: "30%", backgroundColor: "hotpink", border: "3px solid purple" }}>
+            <div
+              key={stories.id}
+              style={{
+                margin: "20px auto",
+                width: "30%",
+                backgroundColor: "hotpink",
+                border: "3px solid purple",
+              }}
+            >
               <div key={stories.id}>
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
