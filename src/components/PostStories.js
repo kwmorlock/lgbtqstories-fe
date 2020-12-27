@@ -73,3 +73,5 @@ const PostStories = (props) => {
     </>
   );
 };
+
+export default PostStories;
