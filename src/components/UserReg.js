@@ -69,7 +69,14 @@ const Register = (props) => {
   };
   return (
     <>
-      <div className="register">Register</div>
+      <div
+        className="register"
+        style={{
+          fontSize: "3rem",
+        }}
+      >
+        Register
+      </div>
 
       <form onSubmit={regSubmit}>
         <label for="username">Username</label>
@@ -82,7 +89,7 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
-         <label for="password">Password</label>
+        <label for="password">Password</label>
         <input
           type="text"
           id="password"
@@ -92,7 +99,7 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
-          <label for="email">Email</label>
+        <label for="email">Email</label>
         <input
           type="text"
           id="email"

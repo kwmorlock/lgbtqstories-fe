@@ -65,7 +65,14 @@ const Login = (props) => {
   };
   return (
     <>
-      <div className="login">Login</div>
+      <div
+        className="login"
+        style={{
+          fontSize: "3rem",
+        }}
+      >
+        Login
+      </div>
 
       <form onSubmit={loginSubmit}>
         <label for="username">Username</label>
