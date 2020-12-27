@@ -6,6 +6,7 @@ import Login from "./components/UserLogin";
 import PrivateRoute from "./utils/privateRoute";
 import UserStories from "./components/Stories";
 import PostStories from "./components/PostStories"
+import UserStory from "./components/UserStories"
 import { HashRouter as Router, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/login" component={Login} />
         <PrivateRoute path="/stories/add" component={PostStories} />
         <PrivateRoute path="/stories" component={UserStories} />
+        <PrivateRoute path="/stories/edit" component={UserStory} />
       </div>
     </Router>
   );
