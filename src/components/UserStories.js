@@ -14,3 +14,12 @@ const UserStory = (props) => {
   const [edit, setEdit] = useState(false);
   const [storyToEdit, setStoryToEdit] = useState(initialStory);
 };
+
+useEffect(() => {
+  axiosWithAuth()
+    .get(`/api/stories/${localStorage.getItem("id")}`)
+    .then((res) => {
+      setStories(res.data);
+    })
+    .catch((err) => console.log("Fix your makeup and try again", err));
+}, []);
