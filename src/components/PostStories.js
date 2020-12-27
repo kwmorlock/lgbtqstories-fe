@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 
 const storyId = window.localStorage.getItem("id");
@@ -12,6 +12,13 @@ const initialState = {
 
 const PostStories = (props) => {
   const [addedStory, setAddedStory] = useState(initialState);
+
+  useEffect(() => {
+    fetch(`/api/stories/${storyId}`, addedStory)
+      .then((res) => res.json())
+      .then((result) => setAddedStory(result.data))
+      .catch((err) => console.log('error'))
+  }, [])
 
   const handleChange = (e) => {
     setAddedStory({
