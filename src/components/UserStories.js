@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import UserStories from "./Stories";
 
 const initialStory = {
   id: null,
@@ -54,4 +55,63 @@ const UserStory = (props) => {
       })
       .catch((err) => console.log("sorry, not working", err.res));
   };
+  return (
+    <>
+      <div>
+        <div>
+          {stories.map((stories) => (
+            <div
+              key={stories.id}
+              style={{
+                margin: "20px auto",
+                width: "30%",
+                backgroundColor: "hotpink",
+              }}
+            >
+              <div key={stories.id}>
+                <p>Title: {stories.title}</p>
+                <p>Story: {stories.story}</p>
+                <p>Tags: {stories.tags}</p>
+                <button onClick={() => editStory(stories)}>Edit</button>
+                <button onClick={() => deleteStory(stories)}>Delete</button>
+                <hr />
+              </div>
+            </div>
+          ))}
+
+          {edit && (
+            <div style={{ margin: "20px auto", width: "70%", display: "flex" }}>
+              <form onSubmit={saveEdit}>
+                <div>
+                  <h3>Edit Story</h3>
+                  <input
+                    onChange={(e) =>
+                      setStoryToEdit({ ...storyToEdit, title: e.target.value })
+                    }
+                    value={storyToEdit.title}
+                  />
+                  <input
+                    onChange={(e) =>
+                      setStoryToEdit({ ...storyToEdit, story: e.target.value })
+                    }
+                    value={storyToEdit.story}
+                  />
+                  <input
+                    onChange={(e) =>
+                      setStoryToEdit({ ...storyToEdit, tags: e.target.value })
+                    }
+                    value={storyToEdit.tags}
+                  />
+                  <button type="submit">save</button>
+                  <button onClick={() => setEdit(false)}>cancel</button>
+                </div>
+              </form>
+            </div>
+          )}
+        </div>
+      </div>
+    </>
+  );
 };
+
+export default UserStories;
