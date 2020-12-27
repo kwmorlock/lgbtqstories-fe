@@ -59,6 +59,7 @@ const Login = (props) => {
       .post("api/users/auth/login", userData)
       .then((res) => {
         localStorage.setItem("token", res.data.token);
+        localStorage.setItem('id', res.data.usersId)
         props.history.push("/stories");
       })
       .catch((err) => console.log("User Login Error:", err.message));

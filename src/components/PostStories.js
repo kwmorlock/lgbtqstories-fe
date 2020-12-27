@@ -7,7 +7,7 @@ const initialState = {
   title: "",
   story: "",
   tags: "",
-  usersId: storyId,
+  usersId: storyId
 };
 
 const PostStories = (props) => {
@@ -23,12 +23,13 @@ const PostStories = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axiosWithAuth()
-      .post(`/api/stories/`, addedStory)
+      .post(`/api/stories/${storyId}`, addedStory)
       .then((res) => {
-        setAddedStory(res.data.story);
+        console.log(res, 'added story data working')
+        setAddedStory(res.data.newStory);
       })
       .catch((err) => console.log(err, "failed"));
-    props.history.push("/api/stories");
+    // props.history.push("/stories");
   };
 
   return (
@@ -64,6 +65,15 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
+              {/* <label for="id">id</label>
+              <input
+                type="text"
+                name="id"
+                id="id"
+                placeholder="id"
+                onChange={handleChange}
+                value={addedStory.id}
+              /> */}
 
               <button type="submit">Add Story</button>
             </div>
