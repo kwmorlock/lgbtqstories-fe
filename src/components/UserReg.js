@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { Link } from "react-router-dom";
 
 const Register = (props) => {
   const [userData, setUserData] = useState({
@@ -113,6 +114,9 @@ const Register = (props) => {
           Register
         </button>
       </form>
+      <div>
+        <Link to="/login">Already a User? Login Now.</Link>
+      </div>
     </>
   );
 };
