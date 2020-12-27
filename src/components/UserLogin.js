@@ -7,6 +7,7 @@ const Login = (props) => {
     username: "",
     password: "",
     email: "",
+    isFetching: false,
   });
   const loginFormSchema = yup.object().shape({
     username: yup.string().required("Please enter your username!"),
@@ -58,8 +59,8 @@ const Login = (props) => {
     axiosWithAuth()
       .post("api/users/auth/login", userData)
       .then((res) => {
-        localStorage.setItem("token", res.data.token);
-        localStorage.setItem('id', res.data.usersId)
+        localStorage.setItem("token", res.data.message);
+        localStorage.setItem("id", res.data.usersId);
         props.history.push("/stories");
       })
       .catch((err) => console.log("User Login Error:", err.message));

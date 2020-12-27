@@ -7,7 +7,7 @@ const initialState = {
   title: "",
   story: "",
   tags: "",
-  usersId: storyId
+  usersId: storyId,
 };
 
 const PostStories = (props) => {
@@ -25,11 +25,10 @@ const PostStories = (props) => {
     axiosWithAuth()
       .post(`/api/stories/${storyId}`, addedStory)
       .then((res) => {
-        console.log(res, 'added story data working')
         setAddedStory(res.data.newStory);
       })
       .catch((err) => console.log(err, "failed"));
-    // props.history.push("/stories");
+    props.history.push("/stories");
   };
 
   return (
