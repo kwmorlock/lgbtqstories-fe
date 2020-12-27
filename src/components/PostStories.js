@@ -4,8 +4,12 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 const storyId = window.localStorage.getItem("id");
 
 const initialState = {
-    title: "",
-    story: "",
-    tags: "",
-    usersId: storyId
-  };
+  title: "",
+  story: "",
+  tags: "",
+  usersId: storyId,
+};
+
+const PostStories = (props) => {
+  const [addedStory, setAddedStory] = useState(initialState);
+};
