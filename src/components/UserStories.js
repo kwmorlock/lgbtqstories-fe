@@ -27,4 +27,21 @@ const UserStory = (props) => {
     setEdit(true);
     setStoryToEdit(stories);
   };
+
+  const saveEdit = (e) => {
+    e.preventDefault();
+    const { title, story, tags } = storyToEdit;
+    console.log({ title, story, tags });
+    axiosWithAuth()
+      .put(`/api/stories/${storyToEdit.id}`, {
+        title,
+        story,
+        tags,
+      })
+      .then((res) => {
+        console.log(res);
+        document.location.reload();
+      })
+      .catch((err) => console.log("sorry, not working", err.res));
+  };
 };
