@@ -12,4 +12,11 @@ const initialState = {
 
 const PostStories = (props) => {
   const [addedStory, setAddedStory] = useState(initialState);
+
+  const handleChange = (e) => {
+    setAddedStory({
+      ...addedStory,
+      [e.target.name]: e.target.value,
+    });
+  };
 };
