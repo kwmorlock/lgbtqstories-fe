@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { Link } from "react-router-dom";
 
 const UserStories = (props) => {
   const [stories, setStories] = useState([]);
@@ -34,6 +35,17 @@ const UserStories = (props) => {
   return (
     <>
       <div>
+        <div
+          style={{
+            margin: "20px auto",
+            width: "10%",
+            backgroundColor: "hotpink",
+            border: "3px solid purple",
+          }}
+        >
+          <Link to="/stories/add">Add Story</Link>
+        </div>
+
         <div>
           <form>
             <input
