@@ -45,6 +45,16 @@ const UserStories = (props) => {
         >
           <Link to="/stories/add">Add Story</Link>
         </div>
+        <div
+          style={{
+            margin: "20px auto",
+            width: "10%",
+            backgroundColor: "hotpink",
+            border: "3px solid purple",
+          }}
+        >
+          <Link to="/stories/edit">Your Stories</Link>
+        </div>
 
         <div>
           <form>
