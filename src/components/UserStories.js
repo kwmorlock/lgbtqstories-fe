@@ -44,4 +44,14 @@ const UserStory = (props) => {
       })
       .catch((err) => console.log("sorry, not working", err.res));
   };
+
+  const deleteStory = (story) => {
+    axiosWithAuth()
+      .delete(`/api/stories/${story.id}`, story)
+      .then((res) => {
+        console.log(res);
+        document.location.reload();
+      })
+      .catch((err) => console.log("sorry, not working", err.res));
+  };
 };
