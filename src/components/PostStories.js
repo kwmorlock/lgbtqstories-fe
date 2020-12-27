@@ -64,16 +64,6 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
-              {/* <label for="id">id</label>
-              <input
-                type="text"
-                name="id"
-                id="id"
-                placeholder="id"
-                onChange={handleChange}
-                value={addedStory.id}
-              /> */}
-
               <button type="submit">Add Story</button>
             </div>
           </form>
