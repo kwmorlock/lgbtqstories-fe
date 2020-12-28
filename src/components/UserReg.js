@@ -80,8 +80,9 @@ const Register = (props) => {
       </div>
 
       <form onSubmit={regSubmit}>
-        <label for="username">Username</label>
+        <label for="username">Username:</label>
         <input
+          class="centerlog"
           type="text"
           id="username"
           placeholder="username"
@@ -90,8 +91,9 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input
+          class="centerlog"
           type="text"
           id="password"
           placeholder="password"
@@ -100,8 +102,9 @@ const Register = (props) => {
           onChange={inputChange}
           required
         />
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input
+          class="centerlog"
           type="text"
           id="email"
           placeholder="email"

@@ -78,8 +78,9 @@ const Login = (props) => {
       </div>
 
       <form onSubmit={loginSubmit}>
-        <label for="username">Username</label>
+        <label for="username">Username:</label>
         <input
+          class="centerlog"
           type="text"
           id="username"
           placeholder="username"
@@ -88,8 +89,9 @@ const Login = (props) => {
           onChange={inputChange}
           required
         />
-        <label for="password">Password</label>
+        <label for="password">Password:</label>
         <input
+          class="centerlog"
           type="text"
           id="password"
           placeholder="password"
@@ -98,8 +100,9 @@ const Login = (props) => {
           onChange={inputChange}
           required
         />
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input
+          class="centerlog"
           type="text"
           id="email"
           placeholder="email"

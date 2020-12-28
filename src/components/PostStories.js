@@ -17,8 +17,8 @@ const PostStories = (props) => {
     fetch(`/api/stories/${storyId}`)
       .then((res) => res.json())
       .then((result) => setAddedStory(result.data))
-      .catch((err) => console.log('error'))
-  }, [])
+      .catch((err) => console.log("error"));
+  }, []);
 
   const handleChange = (e) => {
     setAddedStory({
@@ -40,12 +40,13 @@ const PostStories = (props) => {
 
   return (
     <>
-      <div>
+      <div class="col">
         <div>
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label for="title">Story Title</label>
+          <form onSubmit={handleSubmit} class="col">
+            <div class="col">
+              <label class="space" for="title">Title:</label>
               <input
+                class="center"
                 type="text"
                 name="title"
                 id="title"
@@ -53,8 +54,9 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.title}
               />
-              <label for="story">Story</label>
-              <input
+              <label class="space" for="story">Story:</label>
+              <textarea
+                class="center"
                 type="text"
                 name="story"
                 id="story"
@@ -62,8 +64,9 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.story}
               />
-              <label for="tags">Tags</label>
+              <label class="space" for="tags">Tags:</label>
               <input
+                class="center"
                 type="text"
                 name="tags"
                 id="tags"
@@ -71,7 +74,9 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
-              <button type="submit">Add Story</button>
+              <button class="color" type="submit">
+                Add Story
+              </button>
             </div>
           </form>
         </div>
