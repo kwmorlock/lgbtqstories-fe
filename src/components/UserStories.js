@@ -85,38 +85,60 @@ const UserStory = (props) => {
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
                 <p>Tags: {stories.tags}</p>
-                <button onClick={() => editStory(stories)}>Edit</button>
-                <button onClick={() => deleteStory(stories)}>Delete</button>
+                <button style={{ margin: "20px", fontSize: "1.2rem"}} class="color" onClick={() => editStory(stories)}>Edit</button>
+                <button style={{ margin: "20px", fontSize: "1.2rem"}} class="color" onClick={() => deleteStory(stories)}>Delete</button>
                 <hr />
               </div>
             </div>
           ))}
 
           {edit && (
-            <div style={{ margin: "20px auto", width: "70%", display: "flex" }}>
+            <div
+              class="col"
+              style={{ margin: "20px auto", width: "70%", display: "flex" }}
+            >
               <form onSubmit={saveEdit}>
-                <div>
+                <div class="col">
                   <h3>Edit Story</h3>
                   <input
+                    class="center"
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="title"
                     onChange={(e) =>
                       setStoryToEdit({ ...storyToEdit, title: e.target.value })
                     }
                     value={storyToEdit.title}
                   />
-                  <input
+                  <textarea
+                    class="center"
+                    type="text"
+                    name="story"
+                    id="story"
+                    placeholder="story"
                     onChange={(e) =>
                       setStoryToEdit({ ...storyToEdit, story: e.target.value })
                     }
                     value={storyToEdit.story}
                   />
                   <input
+                    class="center"
+                    type="text"
+                    name="tags"
+                    id="tags"
+                    placeholder="tags"
                     onChange={(e) =>
                       setStoryToEdit({ ...storyToEdit, tags: e.target.value })
                     }
                     value={storyToEdit.tags}
                   />
-                  <button type="submit">save</button>
-                  <button onClick={() => setEdit(false)}>cancel</button>
+                  <button class="color" type="submit">
+                    save
+                  </button>
+                  <button class="color" onClick={() => setEdit(false)}>
+                    cancel
+                  </button>
                 </div>
               </form>
             </div>
