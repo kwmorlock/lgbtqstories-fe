@@ -33,6 +33,11 @@ const UserStories = (props) => {
       })
       .catch((err) => console.log("search not working", err));
   }, [searchTag]);
+
+  const logout = () => {
+    localStorage.clear();
+    window.location.href = "/login";
+  };
   return (
     <>
       <div>
@@ -58,10 +63,25 @@ const UserStories = (props) => {
         >
           <Link to="/stories/edit">Your Stories</Link>
         </div>
+        <div>
+          <button
+            class="color"
+            style={{
+              margin: "20px auto",
+              width: "7%",
+              backgroundColor: "hotpink",
+              border: "3px solid purple",
+            }}
+            onClick={() => logout(false)}
+          >
+            Logout
+          </button>
+        </div>
 
         <div>
           <form>
-            <input class="center"
+            <input
+              class="center"
               onChange={changeHandler}
               type="text"
               placeholder="Search Tags"
