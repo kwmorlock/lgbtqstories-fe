@@ -71,54 +71,60 @@ const Register = (props) => {
   return (
     <>
       <div
-        className="register"
         style={{
-          fontSize: "3rem",
+          margin: "12%",
         }}
       >
-        Register
-      </div>
-
-      <form onSubmit={regSubmit}>
-        <label for="username">Username:</label>
-        <input
-          class="centerlog"
-          type="text"
-          id="username"
-          placeholder="username"
-          name="username"
-          value={userData.username}
-          onChange={inputChange}
-          required
-        />
-        <label for="password">Password:</label>
-        <input
-          class="centerlog"
-          type="text"
-          id="password"
-          placeholder="password"
-          name="password"
-          value={userData.password}
-          onChange={inputChange}
-          required
-        />
-        <label for="email">Email:</label>
-        <input
-          class="centerlog"
-          type="text"
-          id="email"
-          placeholder="email"
-          name="email"
-          value={userData.email}
-          onChange={inputChange}
-          required
-        />
-        <button disabled={buttonDisabled} type="submit">
+        <div
+          className="register"
+          style={{
+            fontSize: "3rem",
+          }}
+        >
           Register
-        </button>
-      </form>
-      <div>
-        <Link to="/login">Already a User? Login Now.</Link>
+        </div>
+
+        <form onSubmit={regSubmit}>
+          <label for="username">Username:</label>
+          <input
+            class="centerlog"
+            type="text"
+            id="username"
+            placeholder="username"
+            name="username"
+            value={userData.username}
+            onChange={inputChange}
+            required
+          />
+          <label for="password">Password:</label>
+          <input
+            class="centerlog"
+            type="text"
+            id="password"
+            placeholder="password"
+            name="password"
+            value={userData.password}
+            onChange={inputChange}
+            required
+          />
+          <label for="email">Email:</label>
+          <input
+            class="centerlog"
+            type="text"
+            id="email"
+            placeholder="email"
+            name="email"
+            value={userData.email}
+            onChange={inputChange}
+            required
+          />
+          <button disabled={buttonDisabled} type="submit">
+            Register
+          </button>
+        </form>
+        <div>
+          <Link to="/login">Already a User? Login Now.</Link>
+        </div>
       </div>
     </>
   );
