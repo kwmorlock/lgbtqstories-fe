@@ -59,8 +59,8 @@ const UserStory = (props) => {
   return (
     <>
       <div>
-      <div
-      class="color"
+        <div
+          class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -73,7 +73,7 @@ const UserStory = (props) => {
         <div>
           {stories.map((stories) => (
             <div
-            class="colors"
+              class="colors"
               key={stories.id}
               style={{
                 margin: "20px auto",
@@ -93,8 +93,7 @@ const UserStory = (props) => {
           ))}
 
           {edit && (
-            <div 
-            style={{ margin: "20px auto", width: "70%", display: "flex" }}>
+            <div style={{ margin: "20px auto", width: "70%", display: "flex" }}>
               <form onSubmit={saveEdit}>
                 <div>
                   <h3>Edit Story</h3>

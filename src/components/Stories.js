@@ -37,7 +37,7 @@ const UserStories = (props) => {
     <>
       <div>
         <div
-        class="color"
+          class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -48,7 +48,7 @@ const UserStories = (props) => {
           <Link to="/stories/add">Add Story</Link>
         </div>
         <div
-        class="color"
+          class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -72,7 +72,8 @@ const UserStories = (props) => {
 
         <div>
           {stories.map((stories) => (
-            <div class="colors"
+            <div
+              class="colors"
               key={stories.id}
               style={{
                 margin: "20px auto",
