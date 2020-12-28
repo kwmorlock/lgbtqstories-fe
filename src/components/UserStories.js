@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { Link } from "react-router-dom";
+import "./comp.css";
 
 const initialStory = {
   id: null,
@@ -59,6 +60,7 @@ const UserStory = (props) => {
     <>
       <div>
       <div
+      class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -71,6 +73,7 @@ const UserStory = (props) => {
         <div>
           {stories.map((stories) => (
             <div
+            class="colors"
               key={stories.id}
               style={{
                 margin: "20px auto",
@@ -90,7 +93,8 @@ const UserStory = (props) => {
           ))}
 
           {edit && (
-            <div style={{ margin: "20px auto", width: "70%", display: "flex" }}>
+            <div 
+            style={{ margin: "20px auto", width: "70%", display: "flex" }}>
               <form onSubmit={saveEdit}>
                 <div>
                   <h3>Edit Story</h3>
