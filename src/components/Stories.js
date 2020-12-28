@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { Link } from "react-router-dom";
+import "./comp.css";
 
 const UserStories = (props) => {
   const [stories, setStories] = useState([]);
@@ -36,6 +37,7 @@ const UserStories = (props) => {
     <>
       <div>
         <div
+        class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -46,6 +48,7 @@ const UserStories = (props) => {
           <Link to="/stories/add">Add Story</Link>
         </div>
         <div
+        class="color"
           style={{
             margin: "20px auto",
             width: "10%",
@@ -69,7 +72,7 @@ const UserStories = (props) => {
 
         <div>
           {stories.map((stories) => (
-            <div
+            <div class="colors"
               key={stories.id}
               style={{
                 margin: "20px auto",
