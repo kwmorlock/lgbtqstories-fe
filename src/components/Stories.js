@@ -40,7 +40,7 @@ const UserStories = (props) => {
           class="color"
           style={{
             margin: "20px auto",
-            width: "10%",
+            width: "7%",
             backgroundColor: "hotpink",
             border: "3px solid purple",
           }}
@@ -51,7 +51,7 @@ const UserStories = (props) => {
           class="color"
           style={{
             margin: "20px auto",
-            width: "10%",
+            width: "7%",
             backgroundColor: "hotpink",
             border: "3px solid purple",
           }}
@@ -61,10 +61,10 @@ const UserStories = (props) => {
 
         <div>
           <form>
-            <input
+            <input class="center"
               onChange={changeHandler}
               type="text"
-              placeholder="search"
+              placeholder="Search Tags"
               value={searchTag}
             />
           </form>
@@ -77,7 +77,7 @@ const UserStories = (props) => {
               key={stories.id}
               style={{
                 margin: "20px auto",
-                width: "30%",
+                width: "40%",
                 backgroundColor: "hotpink",
                 border: "3px solid purple",
               }}
