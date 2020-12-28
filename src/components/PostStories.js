@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { Link } from "react-router-dom";
 
 const storyId = window.localStorage.getItem("id");
 
@@ -40,11 +41,35 @@ const PostStories = (props) => {
 
   return (
     <>
+      <div
+        class="color"
+        style={{
+          margin: "20px auto",
+          width: "7%",
+          backgroundColor: "hotpink",
+          border: "3px solid purple",
+        }}
+      >
+        <Link to="/stories">All Stories</Link>
+      </div>
+      <div
+        class="color"
+        style={{
+          margin: "20px auto",
+          width: "7%",
+          backgroundColor: "hotpink",
+          border: "3px solid purple",
+        }}
+      >
+        <Link to="/stories/edit">Your Stories</Link>
+      </div>
       <div class="col">
         <div>
           <form onSubmit={handleSubmit} class="col">
             <div class="col">
-              <label class="space" for="title">Title:</label>
+              <label class="space" for="title">
+                Title:
+              </label>
               <input
                 class="center"
                 type="text"
@@ -54,7 +79,9 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.title}
               />
-              <label class="space" for="story">Story:</label>
+              <label class="space" for="story">
+                Story:
+              </label>
               <textarea
                 class="center"
                 type="text"
@@ -64,7 +91,9 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.story}
               />
-              <label class="space" for="tags">Tags:</label>
+              <label class="space" for="tags">
+                Tags:
+              </label>
               <input
                 class="center"
                 type="text"
