@@ -16,6 +16,16 @@
 [Back End](https://lgbtqstories.herokuapp.com/)
 
 ---
+
+## Repos
+
+---
+
+[Front End](https://github.com/kwmorlock/lgbtqstories-fe)
+
+[Back End](https://github.com/kwmorlock/lgbtqstories-be)
+
+---
 ### Commits
 ---
 ##### Cle - Clean up code or sorting files
