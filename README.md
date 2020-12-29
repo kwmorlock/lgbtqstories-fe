@@ -32,5 +32,7 @@
 ---
 ##### Set - Setup a new function etc
 ---
+##### Sty- Styling and design
+---
 ##### Upd - Update code for improved or more relevant use
 ---
