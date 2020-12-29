@@ -33,3 +33,9 @@
   .space {
       margin: 5%;
   }
+
+  .main {
+      width: 50%;
+      margin: auto;
+      font-size: 2rem;
+  }
