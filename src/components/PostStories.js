@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
+import * as yup from "yup";
 
 const storyId = window.localStorage.getItem("id");
 
@@ -14,19 +15,50 @@ const initialState = {
 const PostStories = (props) => {
   const [addedStory, setAddedStory] = useState(initialState);
 
-  useEffect(() => {
-    fetch(`/api/stories/${storyId}`)
-      .then((res) => res.json())
-      .then((result) => setAddedStory(result.data))
-      .catch((err) => console.log("error"));
-  }, []);
+  const postFormSchema = yup.object().shape({
+    title: yup.string().required("Please enter your title!"),
+    story: yup.string().required("Please enter your story!"),
+    tags: yup.string().required("Please enter your tags!"),
+  });
+
+  const [errors, setErrors] = useState({
+    title: "",
+    story: "",
+    tags: "",
+  });
+
+  const formValidation = (e) => {
+    yup
+      .reach(postFormSchema, e.target.name)
+      .validate(e.target.value)
+      .then((valid) => {
+        setErrors({ ...errors, [e.target.name]: "" });
+      })
+      .catch((err) => {
+        setErrors({
+          ...errors,
+          [e.target.name]: err.errors[0],
+        });
+      });
+  };
 
   const handleChange = (e) => {
-    setAddedStory({
+    e.persist();
+    const newFormData = {
       ...addedStory,
       [e.target.name]: e.target.value,
-    });
+    };
+    formValidation(e);
+    setAddedStory(newFormData);
   };
+
+  const [buttonDisabled, setButtonDisabled] = useState(true);
+
+  useEffect(() => {
+    postFormSchema.isValid(addedStory).then((valid) => {
+      setButtonDisabled(!valid);
+    });
+  }, [addedStory, postFormSchema]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -82,7 +114,7 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
-              <button class="color" type="submit">
+              <button class="color" type="submit" disabled={buttonDisabled}>
                 Add Story
               </button>
             </div>
