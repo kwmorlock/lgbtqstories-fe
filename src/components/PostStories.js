@@ -3,17 +3,14 @@ import { axiosWithAuth } from "../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
 import * as yup from "yup";
 
-const storyId = window.localStorage.getItem("id");
-
-const initialState = {
-  title: "",
-  story: "",
-  tags: "",
-  usersId: storyId,
-};
-
 const PostStories = (props) => {
-  const [addedStory, setAddedStory] = useState(initialState);
+  const storyId = window.localStorage.getItem("id");
+  const [addedStory, setAddedStory] = useState({
+    title: "",
+    story: "",
+    tags: "",
+    usersId: storyId,
+  });
 
   const postFormSchema = yup.object().shape({
     title: yup.string().required("Please enter your title!"),
