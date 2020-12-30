@@ -9,7 +9,13 @@ const StoriesHeader = () => {
   return (
     <>
       <div class="header">
-        <h1>LGBTQ Stories</h1>
+        <h1
+          style={{
+            marginLeft: "1%",
+          }}
+        >
+          LGBTQ Stories
+        </h1>
         <div
           style={{
             margin: "20px auto",
