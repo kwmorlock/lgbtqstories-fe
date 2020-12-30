@@ -87,6 +87,17 @@ const Register = (props) => {
         </div>
 
         <form class="col" onSubmit={regSubmit}>
+          <label for="email">Email:</label>
+          <input
+            class="centerlog"
+            type="text"
+            id="email"
+            placeholder="email"
+            name="email"
+            value={userData.email}
+            onChange={inputChange}
+            required
+          />
           <label for="username">Username:</label>
           <input
             class="centerlog"
@@ -106,17 +117,6 @@ const Register = (props) => {
             placeholder="password"
             name="password"
             value={userData.password}
-            onChange={inputChange}
-            required
-          />
-          <label for="email">Email:</label>
-          <input
-            class="centerlog"
-            type="text"
-            id="email"
-            placeholder="email"
-            name="email"
-            value={userData.email}
             onChange={inputChange}
             required
           />
