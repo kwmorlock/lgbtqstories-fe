@@ -76,7 +76,7 @@ const Login = (props) => {
         class="whitetext"
       >
         <div
-          className="login"
+          class="col"
           style={{
             fontSize: "3rem",
           }}
@@ -84,7 +84,7 @@ const Login = (props) => {
           Login
         </div>
 
-        <form onSubmit={loginSubmit}>
+        <form class="col" onSubmit={loginSubmit}>
           <label for="username">Username:</label>
           <input
             class="centerlog"

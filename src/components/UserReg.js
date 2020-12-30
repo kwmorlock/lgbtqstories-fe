@@ -78,7 +78,7 @@ const Register = (props) => {
         class="whitetext"
       >
         <div
-          className="register"
+          class="col"
           style={{
             fontSize: "3rem",
           }}
@@ -86,7 +86,7 @@ const Register = (props) => {
           Register
         </div>
 
-        <form onSubmit={regSubmit}>
+        <form class="col" onSubmit={regSubmit}>
           <label for="username">Username:</label>
           <input
             class="centerlog"
