@@ -117,20 +117,18 @@ const StoriesHeader = () => {
             background: "none",
           }}
         >
-          <a href="https://github.com/kwmorlock/lgbtqstories-be">
-            <button
-              style={{
-                color: "white",
-                textDecoration: "none",
-                background: "none",
-                border: "none",
-                fontSize: "2rem",
-              }}
-              onClick={() => logout(false)}
-            >
-              Logout
-            </button>
-          </a>
+          <button
+            style={{
+              color: "white",
+              textDecoration: "none",
+              background: "none",
+              border: "none",
+              fontSize: "2rem",
+            }}
+            onClick={() => logout(false)}
+          >
+            Logout
+          </button>
         </div>
       </div>
     </>
