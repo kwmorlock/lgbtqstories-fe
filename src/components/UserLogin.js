@@ -7,19 +7,16 @@ const Login = (props) => {
   const [userData, setUserData] = useState({
     username: "",
     password: "",
-    email: "",
     isFetching: false,
   });
   const loginFormSchema = yup.object().shape({
     username: yup.string().required("Please enter your username!"),
     password: yup.string().required("Please enter your password!"),
-    email: yup.string().required("Please enter your email!"),
   });
 
   const [errors, setErrors] = useState({
     username: "",
     password: "",
-    email: "",
   });
 
   const formValidation = (e) => {
@@ -107,17 +104,7 @@ const Login = (props) => {
             onChange={inputChange}
             required
           />
-          <label for="email">Email:</label>
-          <input
-            class="centerlog"
-            type="text"
-            id="email"
-            placeholder="email"
-            name="email"
-            value={userData.email}
-            onChange={inputChange}
-            required
-          />
+
           <button disabled={buttonDisabled} type="submit">
             Login
           </button>
