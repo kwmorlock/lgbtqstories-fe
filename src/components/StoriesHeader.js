@@ -2,6 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const StoriesHeader = () => {
+  const logout = () => {
+    localStorage.clear();
+    window.location.href = "/#/login";
+  };
   return (
     <>
       <div class="header">
@@ -18,9 +22,9 @@ const StoriesHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/"
+            to="/stories/add"
           >
-            Home
+            Add Story
           </Link>
         </div>
         <div
@@ -35,9 +39,9 @@ const StoriesHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/login"
+            to="/stories/edit"
           >
-            Login
+            Your Stories
           </Link>
         </div>
         <div
@@ -101,6 +105,30 @@ const StoriesHeader = () => {
               }}
             >
               BE Github
+            </button>
+          </a>
+        </div>
+        <div
+          style={{
+            color: "white",
+            margin: "20px auto",
+            width: "10%",
+            fontSize: "2rem",
+            background: "none",
+          }}
+        >
+          <a href="https://github.com/kwmorlock/lgbtqstories-be">
+            <button
+              style={{
+                color: "white",
+                textDecoration: "none",
+                background: "none",
+                border: "none",
+                fontSize: "2rem",
+              }}
+              onClick={() => logout(false)}
+            >
+              Logout
             </button>
           </a>
         </div>
