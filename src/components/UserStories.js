@@ -135,10 +135,18 @@ const UserStory = (props) => {
                     }
                     value={storyToEdit.tags}
                   />
-                  <button class="color" type="submit">
+                  <button
+                    style={{ margin: "10px", fontSize: "1.2rem" }}
+                    class="color"
+                    type="submit"
+                  >
                     save
                   </button>
-                  <button class="color" onClick={() => setEdit(false)}>
+                  <button
+                    style={{ margin: "10px", fontSize: "1.2rem" }}
+                    class="color"
+                    onClick={() => setEdit(false)}
+                  >
                     cancel
                   </button>
                 </div>
