@@ -1,43 +1,109 @@
+import { white } from "chalk";
 import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <>
-      <div>
+      <div class="header">
         <h1>LGBTQ Stories</h1>
         <div
-          class="color"
           style={{
             margin: "20px auto",
             width: "10%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
+            fontSize: "2rem",
           }}
         >
-          <Link to="/">Home</Link>
+          <Link
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to="/"
+          >
+            Home
+          </Link>
         </div>
         <div
-          class="color"
           style={{
             margin: "20px auto",
             width: "10%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
+            fontSize: "2rem",
           }}
         >
-          <Link to="/login">Login</Link>
+          <Link
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to="/login"
+          >
+            Login
+          </Link>
         </div>
         <div
-          class="color"
           style={{
+            color: "white",
             margin: "20px auto",
             width: "10%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
+            fontSize: "2rem",
           }}
         >
-          <Link to="/register">Register</Link>
+          <Link
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+            to="/register"
+          >
+            Register
+          </Link>
+        </div>
+        <div
+          style={{
+            color: "white",
+            margin: "20px auto",
+            width: "10%",
+            fontSize: "2rem",
+            background: "none",
+          }}
+        >
+          <a href="https://github.com/kwmorlock/lgbtqstories-fe">
+            <button
+              style={{
+                color: "white",
+                textDecoration: "none",
+                background: "none",
+                border: "none",
+                fontSize: "2rem",
+              }}
+            >
+              FE Github
+            </button>
+          </a>
+        </div>
+        <div
+          style={{
+            color: "white",
+            margin: "20px auto",
+            width: "10%",
+            fontSize: "2rem",
+            background: "none",
+          }}
+        >
+          <a href="https://github.com/kwmorlock/lgbtqstories-be">
+            <button
+              style={{
+                color: "white",
+                textDecoration: "none",
+                background: "none",
+                border: "none",
+                fontSize: "2rem",
+              }}
+            >
+              BE Github
+            </button>
+          </a>
         </div>
       </div>
     </>

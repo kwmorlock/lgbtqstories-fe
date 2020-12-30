@@ -39,3 +39,13 @@
       margin: auto;
       font-size: 2rem;
   }
+
+  .header {
+      display: flex;
+      color: white;
+      border-bottom: 8px solid white
+  }
+
+  .whitetext {
+    color: white;
+  }
