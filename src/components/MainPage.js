@@ -4,7 +4,7 @@ const MainPage = () => {
   return (
     <>
       <div class="main">
-        <h1 class="pretty">
+        <h1 class="whitetext">
           Welcome to LGBTQ Stories where you can share anonymous stories about
           your own experiences, keep track of your own stories, and even edit or
           delete them at a later time.
