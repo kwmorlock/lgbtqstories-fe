@@ -75,6 +75,7 @@ const Register = (props) => {
         style={{
           margin: "12%",
         }}
+        class="whitetext"
       >
         <div
           className="register"

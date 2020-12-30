@@ -73,6 +73,7 @@ const Login = (props) => {
         style={{
           margin: "12%",
         }}
+        class="whitetext"
       >
         <div
           className="login"
