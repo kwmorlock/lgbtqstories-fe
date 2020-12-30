@@ -19,7 +19,6 @@ const StoriesHeader = () => {
         <div
           style={{
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -37,7 +36,6 @@ const StoriesHeader = () => {
         <div
           style={{
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -54,7 +52,6 @@ const StoriesHeader = () => {
         <div
           style={{
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -72,7 +69,6 @@ const StoriesHeader = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
             background: "none",
           }}
@@ -95,7 +91,6 @@ const StoriesHeader = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
             background: "none",
           }}
@@ -118,7 +113,6 @@ const StoriesHeader = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
             background: "none",
           }}

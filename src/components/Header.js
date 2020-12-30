@@ -15,7 +15,6 @@ const Header = () => {
         <div
           style={{
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -32,7 +31,6 @@ const Header = () => {
         <div
           style={{
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -50,7 +48,6 @@ const Header = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
           }}
         >
@@ -68,7 +65,6 @@ const Header = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
             background: "none",
           }}
@@ -91,7 +87,6 @@ const Header = () => {
           style={{
             color: "white",
             margin: "20px auto",
-            width: "10%",
             fontSize: "2rem",
             background: "none",
           }}
