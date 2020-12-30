@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import Header from "./Header";
 
 const Login = (props) => {
   const [userData, setUserData] = useState({
@@ -67,6 +68,7 @@ const Login = (props) => {
   };
   return (
     <>
+      <Header />
       <div
         style={{
           margin: "12%",

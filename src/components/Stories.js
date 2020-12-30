@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { Link } from "react-router-dom";
 import "./comp.css";
+import StoriesHeader from "./StoriesHeader";
 
 const UserStories = (props) => {
   const [stories, setStories] = useState([]);
@@ -40,6 +41,7 @@ const UserStories = (props) => {
   };
   return (
     <>
+    <StoriesHeader/>
       <div>
         <div
           class="color"

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { Link } from "react-router-dom";
+import StoriesHeader from "./StoriesHeader";
 
 const storyId = window.localStorage.getItem("id");
 
@@ -41,6 +42,7 @@ const PostStories = (props) => {
 
   return (
     <>
+      <StoriesHeader />
       <div
         class="color"
         style={{

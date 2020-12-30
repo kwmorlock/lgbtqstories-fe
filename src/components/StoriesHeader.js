@@ -22,11 +22,12 @@ const StoriesHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/stories/add"
+            to="/stories"
           >
-            Add Story
+            All Stories
           </Link>
         </div>
+
         <div
           style={{
             margin: "20px auto",
@@ -46,7 +47,6 @@ const StoriesHeader = () => {
         </div>
         <div
           style={{
-            color: "white",
             margin: "20px auto",
             width: "10%",
             fontSize: "2rem",
@@ -57,9 +57,9 @@ const StoriesHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/register"
+            to="/stories/add"
           >
-            Register
+            Add Story
           </Link>
         </div>
         <div

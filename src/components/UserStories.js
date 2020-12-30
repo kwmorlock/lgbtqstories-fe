@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import { Link } from "react-router-dom";
 import "./comp.css";
+import StoriesHeader from "./StoriesHeader";
 
 const initialStory = {
   id: null,
@@ -58,6 +59,7 @@ const UserStory = (props) => {
   };
   return (
     <>
+      <StoriesHeader />
       <div>
         <div
           class="color"
@@ -85,8 +87,20 @@ const UserStory = (props) => {
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
                 <p>Tags: {stories.tags}</p>
-                <button style={{ margin: "20px", fontSize: "1.2rem"}} class="color" onClick={() => editStory(stories)}>Edit</button>
-                <button style={{ margin: "20px", fontSize: "1.2rem"}} class="color" onClick={() => deleteStory(stories)}>Delete</button>
+                <button
+                  style={{ margin: "20px", fontSize: "1.2rem" }}
+                  class="color"
+                  onClick={() => editStory(stories)}
+                >
+                  Edit
+                </button>
+                <button
+                  style={{ margin: "20px", fontSize: "1.2rem" }}
+                  class="color"
+                  onClick={() => deleteStory(stories)}
+                >
+                  Delete
+                </button>
                 <hr />
               </div>
             </div>
