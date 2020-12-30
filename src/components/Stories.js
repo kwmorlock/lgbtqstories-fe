@@ -41,45 +41,8 @@ const UserStories = (props) => {
   };
   return (
     <>
-    <StoriesHeader/>
+      <StoriesHeader />
       <div>
-        <div
-          class="color"
-          style={{
-            margin: "20px auto",
-            width: "7%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
-          }}
-        >
-          <Link to="/stories/add">Add Story</Link>
-        </div>
-        <div
-          class="color"
-          style={{
-            margin: "20px auto",
-            width: "7%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
-          }}
-        >
-          <Link to="/stories/edit">Your Stories</Link>
-        </div>
-        <div>
-          <button
-            class="color"
-            style={{
-              margin: "20px auto",
-              width: "7%",
-              backgroundColor: "hotpink",
-              border: "3px solid purple",
-            }}
-            onClick={() => logout(false)}
-          >
-            Logout
-          </button>
-        </div>
-
         <div>
           <form>
             <input
