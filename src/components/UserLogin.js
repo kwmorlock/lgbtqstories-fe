@@ -105,7 +105,7 @@ const Login = (props) => {
             required
           />
 
-          <button disabled={buttonDisabled} type="submit">
+          <button class="color" disabled={buttonDisabled} type="submit">
             Login
           </button>
         </form>
