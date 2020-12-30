@@ -61,17 +61,6 @@ const UserStory = (props) => {
     <>
       <StoriesHeader />
       <div>
-        <div
-          class="color"
-          style={{
-            margin: "20px auto",
-            width: "10%",
-            backgroundColor: "hotpink",
-            border: "3px solid purple",
-          }}
-        >
-          <Link to="/stories">All Stories</Link>
-        </div>
         <div>
           {stories.map((stories) => (
             <div
