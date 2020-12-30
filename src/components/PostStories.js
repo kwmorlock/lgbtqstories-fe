@@ -43,28 +43,6 @@ const PostStories = (props) => {
   return (
     <>
       <StoriesHeader />
-      <div
-        class="color"
-        style={{
-          margin: "20px auto",
-          width: "7%",
-          backgroundColor: "hotpink",
-          border: "3px solid purple",
-        }}
-      >
-        <Link to="/stories">All Stories</Link>
-      </div>
-      <div
-        class="color"
-        style={{
-          margin: "20px auto",
-          width: "7%",
-          backgroundColor: "hotpink",
-          border: "3px solid purple",
-        }}
-      >
-        <Link to="/stories/edit">Your Stories</Link>
-      </div>
       <div class="col">
         <div>
           <form onSubmit={handleSubmit} class="col">
