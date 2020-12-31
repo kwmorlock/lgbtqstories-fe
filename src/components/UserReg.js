@@ -83,7 +83,15 @@ const Register = (props) => {
             fontSize: "3rem",
           }}
         >
-          Register
+          {" "}
+          <p
+            style={{
+              fontSize: "3rem",
+              marginTop: "-30px",
+            }}
+          >
+            Register
+          </p>
         </div>
 
         <form class="col" onSubmit={regSubmit}>
