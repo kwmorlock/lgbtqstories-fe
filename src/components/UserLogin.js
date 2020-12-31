@@ -78,7 +78,15 @@ const Login = (props) => {
             fontSize: "3rem",
           }}
         >
-          Login
+          {" "}
+          <p
+            style={{
+              fontSize: "3rem",
+              marginTop: "-30px",
+            }}
+          >
+            Login
+          </p>
         </div>
 
         <form class="col" onSubmit={loginSubmit}>
