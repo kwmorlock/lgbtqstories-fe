@@ -11,7 +11,7 @@
 ## Deployed
 
 ---
-[Front End](https://lgbtqstories.netlify.app/#/register)
+[Front End](https://lgbtqstories.netlify.app/)
 
 [Back End](https://lgbtqstories.herokuapp.com/)
 
