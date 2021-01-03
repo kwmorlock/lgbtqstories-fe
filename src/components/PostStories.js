@@ -71,7 +71,12 @@ const PostStories = (props) => {
   return (
     <>
       <StoriesHeader />
-      <div class="col">
+      <div
+        class="col"
+        style={{
+          margin: "8%",
+        }}
+      >
         <div class="whitetext">
           <form onSubmit={handleSubmit} class="col">
             <div class="col">
