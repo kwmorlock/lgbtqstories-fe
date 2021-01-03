@@ -72,7 +72,7 @@ const PostStories = (props) => {
     <>
       <StoriesHeader />
       <div class="col">
-        <div>
+        <div class="whitetext">
           <form onSubmit={handleSubmit} class="col">
             <div class="col">
               <label class="space" for="title">
