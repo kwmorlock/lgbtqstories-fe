@@ -69,6 +69,7 @@ const UserStory = (props) => {
                 margin: "20px auto",
                 width: "30%",
                 backgroundColor: "hotpink",
+                border: "3px solid purple",
               }}
             >
               <div key={stories.id}>
