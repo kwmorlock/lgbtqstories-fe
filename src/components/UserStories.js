@@ -101,7 +101,7 @@ const UserStory = (props) => {
             >
               <form onSubmit={saveEdit}>
                 <div class="col">
-                  <h3>Edit Story</h3>
+                  <h3 class="whitetext">Edit Story</h3>
                   <input
                     class="center"
                     type="text"
