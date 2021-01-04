@@ -26,23 +26,16 @@
 [Back End](https://github.com/kwmorlock/lgbtqstories-be)
 
 ---
-### Commits
----
-##### Cle - Clean up code or sorting files
----
-##### Com - Comments added to code
----
-##### Cre - Create a new file, database etc
----
-##### Dep - Dependency installed
----
-##### Fix - Fix errors or bugs
----
-##### Rea - Read me update
----
-##### Set - Setup a new function etc
----
-##### Sty- Styling and design
----
-##### Upd - Update code for improved or more relevant use
----
+
+## Commits
+| Prefix | Meaning |
+| ------- | --- |
+| Cle | Clean up code or sorting files|
+| Com | Comments added to code |
+| Cre | Create a new file, database etc |
+| Dep | Dependency installed|
+| Fix | Fix errors or bugs |
+| Rea | Read me update |
+| Set | Setup a new function etc |
+| Sty | Styling and design |
+| Upd | Update code for improved or more relevant use |
