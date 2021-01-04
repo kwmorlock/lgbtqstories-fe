@@ -90,7 +90,6 @@ const UserStory = (props) => {
                 >
                   Delete
                 </button>
-                <hr />
               </div>
             </div>
           ))}
