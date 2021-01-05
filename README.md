@@ -11,6 +11,8 @@
 ## Deployed
 
 ---
+Important note, back end goes to sleep without use, and might take up to 10 seconds of waiting before it redirects to login after registering. 
+
 [Front End](https://lgbtqstories.netlify.app/)
 
 [Back End](https://lgbtqstories.herokuapp.com/)
