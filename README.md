@@ -8,6 +8,15 @@
 |                  [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/kwmorlock)                   |
 |                                                [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/kwmorlock/)    |
 ---
+
+## Description
+
+---
+
+Front End - A React application using promise based HTTP client [Axios](https://www.npmjs.com/package/axios), and schema builder for value parsing and validation [Yup](https://www.npmjs.com/package/yup).
+
+---
+
 ## Deployed
 
 ---
