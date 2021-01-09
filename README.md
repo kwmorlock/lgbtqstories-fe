@@ -15,6 +15,8 @@
 
 Front End - A React application using promise based HTTP client [Axios](https://www.npmjs.com/package/axios), and schema builder for value parsing and validation [Yup](https://www.npmjs.com/package/yup).
 
+Back End - A Node.JS Express API using SQL query builder [knex](https://www.npmjs.com/package/knex), optimized bcrypt [bcryptjs](https://www.npmjs.com/package/bcryptjs), SQL database engine [sqlite3](https://www.npmjs.com/package/sqlite3), URL-safe means of representing claims to be transferred between two parties [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken), mechanism that allows restricted resources on a web page to be requested from another domain [cors](https://www.npmjs.com/package/cors), and securing the Express app by setting various HTTP headers [Helmet](https://www.npmjs.com/package/helmet).
+
 ---
 
 ## Deployed
