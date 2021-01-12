@@ -128,13 +128,23 @@ const Register = (props) => {
             onChange={inputChange}
             required
           />
-          <button class="color" disabled={buttonDisabled} type="submit">
+          <button
+            class="color"
+            style={{
+              width: "80px",
+              height: "40px",
+            }}
+            disabled={buttonDisabled}
+            type="submit"
+          >
             Register
           </button>
         </form>
-        <p style={{
-              fontSize: "2rem",
-            }}>
+        <p
+          style={{
+            fontSize: "2rem",
+          }}
+        >
           Important note, back end goes to sleep without use, and might take up
           to 10 seconds of waiting before it redirects to login after
           registering.
