@@ -116,7 +116,16 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
-              <button class="color" type="submit" disabled={buttonDisabled}>
+              <button
+                class="color"
+                style={{
+                  width: "80px",
+                  height: "40px",
+                  marginTop: "5%",
+                }}
+                type="submit"
+                disabled={buttonDisabled}
+              >
                 Add Story
               </button>
             </div>
