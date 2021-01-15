@@ -17,7 +17,7 @@ const UserList = (props) => {
       .get(`/api/users/users`)
       .then((res) => {
         setUsers(
-          res.data.filter((users) => {
+          res.data.users.filter((users) => {
             if (searchTag === "") {
               return users;
             } else if (
