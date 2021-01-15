@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import "./comp.css";
-import StoriesHeader from "./StoriesHeader";
+import AdminHeader from "./AdminHeader";
 
 const AdminStories = (props) => {
   const [adminNote, setStories] = useState([]);
@@ -46,7 +46,7 @@ const AdminStories = (props) => {
 
   return (
     <>
-      <StoriesHeader />
+      <AdminHeader />
       <div>
         <div>
           <form>
