@@ -104,7 +104,7 @@ const AdminLogin = (props) => {
           <label for="password">Password:</label>
           <input
             class="centerlog"
-            type="text"
+            type="password"
             id="password"
             placeholder="password"
             name="password"
