@@ -27,7 +27,7 @@ const AdminHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/stories"
+            to="/adminstories"
           >
             All Stories
           </Link>
@@ -44,25 +44,9 @@ const AdminHeader = () => {
               color: "white",
               textDecoration: "none",
             }}
-            to="/stories/edit"
+            to="/userlist"
           >
-            Your Stories
-          </Link>
-        </div>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/stories/add"
-          >
-            Add Story
+            Users
           </Link>
         </div>
         <div
