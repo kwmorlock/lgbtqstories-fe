@@ -4,7 +4,7 @@ import "./comp.css";
 import StoriesHeader from "./StoriesHeader";
 
 const AdminStories = (props) => {
-  const [stories, setStories] = useState([]);
+  const [adminNote, setStories] = useState([]);
   const [searchTag, setSearchTag] = useState("");
 
   const changeHandler = (e) => {
@@ -14,17 +14,17 @@ const AdminStories = (props) => {
 
   useEffect(() => {
     axiosWithAuth()
-      .get(`/api/notes/`)
+      .get(`/api/stories/`)
       .then((res) => {
         setStories(
-          res.data.filter((story) => {
+          res.data.filter((notes) => {
             if (searchTag === "") {
-              return story;
+              return notes;
             } else if (
-              story.title.toLowerCase().includes(searchTag.toLowerCase()) ||
-              story.tags.toLowerCase().includes(searchTag.toLowerCase())
+              notes.title.toLowerCase().includes(searchTag.toLowerCase()) ||
+              notes.tags.toLowerCase().includes(searchTag.toLowerCase())
             ) {
-              return story;
+              return notes;
             } else {
               return null;
             }
@@ -33,6 +33,16 @@ const AdminStories = (props) => {
       })
       .catch((err) => console.log("search not working", err));
   }, [searchTag]);
+
+  const deleteStory = (story) => {
+    axiosWithAuth()
+      .delete(`/api/stories/${story.id}`, story)
+      .then((res) => {
+        console.log(res);
+        document.location.reload();
+      })
+      .catch((err) => console.log("sorry, not working", err.res));
+  };
 
   return (
     <>
@@ -51,7 +61,7 @@ const AdminStories = (props) => {
         </div>
 
         <div>
-          {stories.map((adminNote) => (
+          {adminNote.map((adminNote) => (
             <div
               class="colors"
               key={adminNote.id}
@@ -66,7 +76,13 @@ const AdminStories = (props) => {
                 <p>Title: {adminNote.title}</p>
                 <p>Story: {adminNote.story}</p>
                 <p>Tags: {adminNote.tags}</p>
-                <p>Notes: {adminNote.note}</p>
+                <button
+                  style={{ margin: "20px", fontSize: "1.2rem" }}
+                  class="color"
+                  onClick={() => deleteStory(adminNote)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))}

@@ -8,6 +8,7 @@ import PostStories from "./components/PostStories";
 import UserStory from "./components/UserStories";
 import MainPage from "./components/MainPage";
 import AdminLogin from "./components/AdminLogin";
+import AdminStories from "./components/AdminStories";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
+          <PrivateRoute path="/adminstories" component={AdminStories} />
           <PrivateRoute path="/stories/edit" component={UserStory} />
           <PrivateRoute path="/stories/add" component={PostStories} />
           <PrivateRoute path="/stories" component={UserStories} />
