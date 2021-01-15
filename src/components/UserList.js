@@ -34,6 +34,16 @@ const UserList = (props) => {
       .catch((err) => console.log("search not working", err));
   }, [searchTag]);
 
+  const deleteUser = (user) => {
+    axiosWithAuth()
+      .delete(`/api/users/users/${user.id}`, user)
+      .then((res) => {
+        console.log(res);
+        document.location.reload();
+      })
+      .catch((err) => console.log("sorry, not working", err.res));
+  };
+
   return (
     <>
       <AdminHeader />
@@ -65,6 +75,13 @@ const UserList = (props) => {
               <div key={users.id}>
                 <p>Username: {users.username}</p>
                 <p>Email: {users.email}</p>
+                <button
+                  style={{ margin: "20px", fontSize: "1.2rem" }}
+                  class="color"
+                  onClick={() => deleteUser(users)}
+                >
+                  Delete
+                </button>
               </div>
             </div>
           ))}
