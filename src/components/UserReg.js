@@ -13,7 +13,7 @@ const Register = (props) => {
   const regFormSchema = yup.object().shape({
     username: yup.string().required("Please enter your username!"),
     password: yup.string().required("Please enter your password!"),
-    email: yup.string().required("Please enter your email!"),
+    email: yup.string().email().required("Please enter your email!"),
   });
 
   const [errors, setErrors] = useState({
