@@ -57,28 +57,6 @@ const AdminHeader = () => {
             background: "none",
           }}
         >
-          <a href="https://github.com/kwmorlock/lgbtqstories-fe">
-            <button
-              style={{
-                color: "white",
-                textDecoration: "none",
-                background: "none",
-                border: "none",
-                fontSize: "2rem",
-              }}
-            >
-              FE Github
-            </button>
-          </a>
-        </div>
-        <div
-          style={{
-            color: "white",
-            margin: "20px auto",
-            fontSize: "2rem",
-            background: "none",
-          }}
-        >
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
             <button
               style={{
@@ -89,7 +67,7 @@ const AdminHeader = () => {
                 fontSize: "2rem",
               }}
             >
-              BE Github
+              Github
             </button>
           </a>
         </div>
