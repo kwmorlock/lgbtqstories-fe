@@ -7,9 +7,9 @@ import UserStories from "./components/Stories";
 import PostStories from "./components/PostStories";
 import UserStory from "./components/UserStories";
 import MainPage from "./components/MainPage";
-import AdminLogin from "./components/AdminLogin";
-import AdminStories from "./components/AdminStories";
-import UserList from "./components/UserList";
+import AdminLogin from "./components/admin/AdminLogin";
+import AdminStories from "./components/admin/AdminStories";
+import UserList from "./components/admin/UserList";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
