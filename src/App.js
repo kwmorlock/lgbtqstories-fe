@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import Register from "./components/UserReg";
-import Login from "./components/UserLogin";
+import Register from "./components/users/UserReg";
+import Login from "./components/users/UserLogin";
 import PrivateRoute from "./utils/privateRoute";
-import UserStories from "./components/Stories";
-import PostStories from "./components/PostStories";
-import UserStory from "./components/UserStories";
+import UserStories from "./components/users/Stories";
+import PostStories from "./components/users/PostStories";
+import UserStory from "./components/users/UserStories";
 import MainPage from "./components/MainPage";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminStories from "./components/admin/AdminStories";

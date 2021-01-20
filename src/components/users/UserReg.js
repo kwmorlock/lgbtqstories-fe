@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
-import { axiosWithAuth } from "../utils/axiosWithAuth";
-import Header from "./Header";
+import { axiosWithAuth } from "../../utils/axiosWithAuth";
+import Header from "../Header";
 
 const Register = (props) => {
   const [userData, setUserData] = useState({

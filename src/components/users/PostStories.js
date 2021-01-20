@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { axiosWithAuth } from "../utils/axiosWithAuth";
+import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
 import * as yup from "yup";
 
