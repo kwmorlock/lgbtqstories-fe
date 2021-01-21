@@ -16,3 +16,8 @@ export const HeaderDiv = styled.div`
 export const HeaderH1 = styled.h1`
   margin-left: 1%;
 `;
+
+export const LinkDiv = styled.div`
+  margin: 20px auto;
+  font-size: 2rem;
+`;

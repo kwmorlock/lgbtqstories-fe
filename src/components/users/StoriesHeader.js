@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1 } from "./StoriesHeaderStyles";
+import { HeaderDiv, HeaderH1, LinkDiv } from "./StoriesHeaderStyles";
 
 const StoriesHeader = () => {
   const logout = () => {
@@ -11,12 +11,7 @@ const StoriesHeader = () => {
     <>
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -26,14 +21,8 @@ const StoriesHeader = () => {
           >
             All Stories
           </Link>
-        </div>
-
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -43,13 +32,8 @@ const StoriesHeader = () => {
           >
             Your Stories
           </Link>
-        </div>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -59,7 +43,7 @@ const StoriesHeader = () => {
           >
             Add Story
           </Link>
-        </div>
+        </LinkDiv>
         <div
           style={{
             color: "white",
