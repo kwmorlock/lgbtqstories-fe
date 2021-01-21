@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1, LinkDiv, ButtonDiv } from "./AdminHeaderStyles";
+import {
+  HeaderDiv,
+  HeaderH1,
+  LinkDiv,
+  ButtonDiv,
+  HeaderButton,
+} from "./AdminHeaderStyles";
 
 const AdminHeader = () => {
   const logout = () => {
@@ -35,32 +41,11 @@ const AdminHeader = () => {
         </LinkDiv>
         <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
-            <button
-              style={{
-                color: "white",
-                textDecoration: "none",
-                background: "none",
-                border: "none",
-                fontSize: "2rem",
-              }}
-            >
-              Github
-            </button>
+            <HeaderButton>Github</HeaderButton>
           </a>
         </ButtonDiv>
         <ButtonDiv>
-          <button
-            style={{
-              color: "white",
-              textDecoration: "none",
-              background: "none",
-              border: "none",
-              fontSize: "2rem",
-            }}
-            onClick={() => logout(false)}
-          >
-            Logout
-          </button>
+          <HeaderButton onClick={() => logout(false)}>Logout</HeaderButton>
         </ButtonDiv>
       </HeaderDiv>
     </>
