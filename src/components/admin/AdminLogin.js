@@ -8,7 +8,7 @@ import {
   Title,
   LoginForm,
   LoginButton,
-  LoginInput
+  LoginInput,
 } from "./AdminLoginStyles";
 
 const AdminLogin = (props) => {
@@ -19,7 +19,10 @@ const AdminLogin = (props) => {
   });
   const loginFormSchema = yup.object().shape({
     username: yup.string().required("Please enter your username!"),
-    password: yup.string().required("Please enter your password!"),
+    password: yup
+      .string()
+      .required("Please enter your password!")
+      .min(3, "Password must be at least 3 characters!"),
   });
 
   const [errors, setErrors] = useState({
@@ -100,6 +103,7 @@ const AdminLogin = (props) => {
             onChange={inputChange}
             required
           />
+          {errors.password.length > 0 ? <p>{errors.password}</p> : null}
           <LoginButton disabled={buttonDisabled} type="submit">
             Login
           </LoginButton>
