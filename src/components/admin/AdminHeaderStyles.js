@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const HeaderDiv = styled.div`
   display: flex;
@@ -35,4 +36,9 @@ export const HeaderButton = styled.button`
   background: none;
   border: none;
   font-size: 2rem;
+`;
+
+export const HeaderLink = styled(Link)`
+  color: white;
+  text-decoration: none;
 `;

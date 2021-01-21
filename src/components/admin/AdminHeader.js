@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   HeaderDiv,
   HeaderH1,
   LinkDiv,
   ButtonDiv,
   HeaderButton,
+  HeaderLink,
 } from "./AdminHeaderStyles";
 
 const AdminHeader = () => {
@@ -18,26 +18,10 @@ const AdminHeader = () => {
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/adminstories"
-          >
-            All Stories
-          </Link>
+          <HeaderLink to="/adminstories">All Stories</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/userlist"
-          >
-            Users
-          </Link>
+          <HeaderLink to="/userlist">Users</HeaderLink>
         </LinkDiv>
         <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
