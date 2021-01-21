@@ -16,7 +16,10 @@ const Register = (props) => {
       .required("Please create your username!")
       .min(3, "Username must be at least 3 characters!"),
     password: yup.string().required("Please enter your password!"),
-    email: yup.string().email().required("Please enter your email!"),
+    email: yup
+      .string()
+      .email("Please use a valid email!")
+      .required("Please enter your email!"),
   });
 
   const [errors, setErrors] = useState({
@@ -109,6 +112,7 @@ const Register = (props) => {
             onChange={inputChange}
             required
           />
+          {errors.email.length > 0 ? <p>{errors.email}</p> : null}
           <label for="username">Username:</label>
           <input
             class="centerlog"
