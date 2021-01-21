@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import Header from "../Header";
-import { MainDiv, TitleDiv } from "./AdminLoginStyles";
+import { MainDiv, TitleDiv, Title } from "./AdminLoginStyles";
 
 const AdminLogin = (props) => {
   const [userData, setUserData] = useState({
@@ -70,14 +70,7 @@ const AdminLogin = (props) => {
       <MainDiv>
         <TitleDiv>
           {" "}
-          <p
-            style={{
-              fontSize: "3rem",
-              marginTop: "-30px",
-            }}
-          >
-            Login
-          </p>
+          <Title>Login</Title>
         </TitleDiv>
 
         <form class="col" onSubmit={loginSubmit}>
