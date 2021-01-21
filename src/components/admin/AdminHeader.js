@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HeaderDiv } from "./AdminHeaderStyles";
 
 const AdminHeader = () => {
   const logout = () => {
@@ -8,7 +9,7 @@ const AdminHeader = () => {
   };
   return (
     <>
-      <div class="header">
+      <HeaderDiv>
         <h1
           style={{
             marginLeft: "1%",
@@ -92,7 +93,7 @@ const AdminHeader = () => {
             Logout
           </button>
         </div>
-      </div>
+      </HeaderDiv>
     </>
   );
 };
