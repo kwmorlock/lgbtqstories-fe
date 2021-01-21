@@ -14,5 +14,11 @@ export const TitleDiv = styled.div`
 
 export const Title = styled.p`
   font-size: 3rem;
-  margin-top: -30px
+  margin-top: -30px;
+`;
+
+export const LoginForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
