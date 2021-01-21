@@ -23,6 +23,11 @@ export const LoginForm = styled.form`
   align-items: center;
 `;
 
+export const LoginInput = styled.input`
+  text-align: center;
+  margin: 1%;
+`;
+
 export const LoginButton = styled.button`
   width: 80px;
   height: 40px;

@@ -8,6 +8,7 @@ import {
   Title,
   LoginForm,
   LoginButton,
+  LoginInput
 } from "./AdminLoginStyles";
 
 const AdminLogin = (props) => {
@@ -80,8 +81,7 @@ const AdminLogin = (props) => {
         </TitleDiv>
         <LoginForm onSubmit={loginSubmit}>
           <label for="username">Username:</label>
-          <input
-            class="centerlog"
+          <LoginInput
             type="text"
             id="username"
             placeholder="username"
@@ -91,8 +91,7 @@ const AdminLogin = (props) => {
             required
           />
           <label for="password">Password:</label>
-          <input
-            class="centerlog"
+          <LoginInput
             type="password"
             id="password"
             placeholder="password"
