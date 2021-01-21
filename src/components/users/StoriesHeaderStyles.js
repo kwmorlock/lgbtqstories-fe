@@ -28,3 +28,11 @@ export const ButtonDiv = styled.div`
   font-size: 2rem;
   background: none;
 `;
+
+export const HeaderButton = styled.button`
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+`;
