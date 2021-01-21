@@ -5,3 +5,7 @@ export const MainDiv = styled.div`
   margin: auto;
   font-size: 2rem;
 `;
+
+export const MainH1 = styled.h1`
+  color: white;
+`;
