@@ -21,3 +21,10 @@ export const LinkDiv = styled.div`
   margin: 20px auto;
   font-size: 2rem;
 `;
+
+export const ButtonDiv = styled.div`
+  color: "white";
+  margin: 20px auto;
+  font-size: 2rem;
+  background: none;
+`;
