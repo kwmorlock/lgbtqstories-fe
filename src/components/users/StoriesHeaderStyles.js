@@ -12,3 +12,7 @@ export const HeaderDiv = styled.div`
     flex-direction: column;
   }
 `;
+
+export const HeaderH1 = styled.h1`
+  margin-left: 1%;
+`;

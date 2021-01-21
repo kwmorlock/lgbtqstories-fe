@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv } from "./StoriesHeaderStyles";
+import { HeaderDiv, HeaderH1 } from "./StoriesHeaderStyles";
 
 const StoriesHeader = () => {
   const logout = () => {
@@ -10,13 +10,7 @@ const StoriesHeader = () => {
   return (
     <>
       <HeaderDiv>
-        <h1
-          style={{
-            marginLeft: "1%",
-          }}
-        >
-          LGBTQ Stories
-        </h1>
+        <HeaderH1>LGBTQ Stories</HeaderH1>
         <div
           style={{
             margin: "20px auto",
