@@ -15,7 +15,10 @@ const Register = (props) => {
       .string()
       .required("Please create your username!")
       .min(3, "Username must be at least 3 characters!"),
-    password: yup.string().required("Please enter your password!"),
+    password: yup
+      .string()
+      .required("Please enter your password!")
+      .min(3, "Password must be at least 3 characters!"),
     email: yup
       .string()
       .email("Please use a valid email!")
@@ -136,6 +139,7 @@ const Register = (props) => {
             onChange={inputChange}
             required
           />
+          {errors.password.length > 0 ? <p>{errors.password}</p> : null}
           <button
             class="color"
             style={{
