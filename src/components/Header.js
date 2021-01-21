@@ -1,6 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1, LinkDiv, ButtonDiv } from "./HeaderStyles";
+import {
+  HeaderDiv,
+  HeaderH1,
+  LinkDiv,
+  ButtonDiv,
+  HeaderButton,
+} from "./HeaderStyles";
 
 const Header = () => {
   return (
@@ -53,17 +59,7 @@ const Header = () => {
         </LinkDiv>
         <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
-            <button
-              style={{
-                color: "white",
-                textDecoration: "none",
-                background: "none",
-                border: "none",
-                fontSize: "2rem",
-              }}
-            >
-              Github
-            </button>
+            <HeaderButton>Github</HeaderButton>
           </a>
         </ButtonDiv>
       </HeaderDiv>

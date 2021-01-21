@@ -23,8 +23,16 @@ export const LinkDiv = styled.div`
 `;
 
 export const ButtonDiv = styled.div`
-  color: "white";
+  color: white;
   margin: 20px auto;
   font-size: 2rem;
   background: none;
+`;
+
+export const HeaderButton = styled.button`
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
 `;
