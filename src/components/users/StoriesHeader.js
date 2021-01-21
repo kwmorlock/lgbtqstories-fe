@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import {
   HeaderDiv,
   HeaderH1,
   LinkDiv,
   ButtonDiv,
   HeaderButton,
+  HeaderLink,
 } from "./StoriesHeaderStyles";
 
 const StoriesHeader = () => {
@@ -18,37 +18,13 @@ const StoriesHeader = () => {
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/stories"
-          >
-            All Stories
-          </Link>
+          <HeaderLink to="/stories">All Stories</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/stories/edit"
-          >
-            Your Stories
-          </Link>
+          <HeaderLink to="/stories/edit">Your Stories</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/stories/add"
-          >
-            Add Story
-          </Link>
+          <HeaderLink to="/stories/add">Add Story</HeaderLink>
         </LinkDiv>
         <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
