@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HeaderDiv } from "./HeaderStyles";
 
 const Header = () => {
   return (
     <>
-      <div class="header">
+      <HeaderDiv>
         <h1
           style={{
             marginLeft: "1%",
@@ -99,7 +100,7 @@ const Header = () => {
             </button>
           </a>
         </div>
-      </div>
+      </HeaderDiv>
     </>
   );
 };
