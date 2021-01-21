@@ -18,7 +18,10 @@ const AdminLogin = (props) => {
     isFetching: false,
   });
   const loginFormSchema = yup.object().shape({
-    username: yup.string().required("Please enter your username!"),
+    username: yup
+      .string()
+      .required("Please enter your username!")
+      .min(3, "Username must be at least 3 characters!"),
     password: yup
       .string()
       .required("Please enter your password!")
@@ -93,6 +96,7 @@ const AdminLogin = (props) => {
             onChange={inputChange}
             required
           />
+          {errors.username.length > 0 ? <p>{errors.username}</p> : null}
           <label for="password">Password:</label>
           <LoginInput
             type="password"
