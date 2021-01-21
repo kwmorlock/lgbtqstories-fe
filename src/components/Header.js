@@ -6,6 +6,7 @@ import {
   LinkDiv,
   ButtonDiv,
   HeaderButton,
+  HeaderLink,
 } from "./HeaderStyles";
 
 const Header = () => {
@@ -14,48 +15,16 @@ const Header = () => {
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/"
-          >
-            Home
-          </Link>
+          <HeaderLink to="/">Home</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/login"
-          >
-            Login
-          </Link>
+          <HeaderLink to="/login">Login</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/register"
-          >
-            Register
-          </Link>
+          <HeaderLink to="/register">Register</HeaderLink>
         </LinkDiv>
         <LinkDiv>
-          <Link
-            style={{
-              color: "white",
-              textDecoration: "none",
-            }}
-            to="/adminlogin"
-          >
-            Admin
-          </Link>
+          <HeaderLink to="/adminlogin">Admin</HeaderLink>
         </LinkDiv>
         <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
