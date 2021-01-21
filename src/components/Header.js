@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1 } from "./HeaderStyles";
+import { HeaderDiv, HeaderH1, LinkDiv } from "./HeaderStyles";
 
 const Header = () => {
   return (
     <>
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -22,13 +17,8 @@ const Header = () => {
           >
             Home
           </Link>
-        </div>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -38,14 +28,8 @@ const Header = () => {
           >
             Login
           </Link>
-        </div>
-        <div
-          style={{
-            color: "white",
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -55,13 +39,8 @@ const Header = () => {
           >
             Register
           </Link>
-        </div>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -71,7 +50,7 @@ const Header = () => {
           >
             Admin
           </Link>
-        </div>
+        </LinkDiv>
         <div
           style={{
             color: "white",
