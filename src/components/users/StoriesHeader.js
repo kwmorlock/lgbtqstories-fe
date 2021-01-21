@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1, LinkDiv } from "./StoriesHeaderStyles";
+import { HeaderDiv, HeaderH1, LinkDiv, ButtonDiv } from "./StoriesHeaderStyles";
 
 const StoriesHeader = () => {
   const logout = () => {
@@ -44,14 +44,7 @@ const StoriesHeader = () => {
             Add Story
           </Link>
         </LinkDiv>
-        <div
-          style={{
-            color: "white",
-            margin: "20px auto",
-            fontSize: "2rem",
-            background: "none",
-          }}
-        >
+        <ButtonDiv>
           <a href="https://github.com/kwmorlock/lgbtqstories-be">
             <button
               style={{
@@ -65,15 +58,8 @@ const StoriesHeader = () => {
               Github
             </button>
           </a>
-        </div>
-        <div
-          style={{
-            color: "white",
-            margin: "20px auto",
-            fontSize: "2rem",
-            background: "none",
-          }}
-        >
+        </ButtonDiv>
+        <ButtonDiv>
           <button
             style={{
               color: "white",
@@ -86,7 +72,7 @@ const StoriesHeader = () => {
           >
             Logout
           </button>
-        </div>
+        </ButtonDiv>
       </HeaderDiv>
     </>
   );
