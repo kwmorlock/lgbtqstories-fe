@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HeaderDiv, HeaderH1 } from "./AdminHeaderStyles";
+import { HeaderDiv, HeaderH1, LinkDiv } from "./AdminHeaderStyles";
 
 const AdminHeader = () => {
   const logout = () => {
@@ -11,12 +11,7 @@ const AdminHeader = () => {
     <>
       <HeaderDiv>
         <HeaderH1>LGBTQ Stories</HeaderH1>
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -26,14 +21,8 @@ const AdminHeader = () => {
           >
             All Stories
           </Link>
-        </div>
-
-        <div
-          style={{
-            margin: "20px auto",
-            fontSize: "2rem",
-          }}
-        >
+        </LinkDiv>
+        <LinkDiv>
           <Link
             style={{
               color: "white",
@@ -43,7 +32,7 @@ const AdminHeader = () => {
           >
             Users
           </Link>
-        </div>
+        </LinkDiv>
         <div
           style={{
             color: "white",
