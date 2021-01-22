@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import AdminHeader from "./AdminHeader";
-import { AdminInput, AdminDiv } from "./AdminStyles";
+import { AdminInput, AdminDiv, AdminButton } from "./AdminStyles";
 
 const AdminStories = (props) => {
   const [adminNote, setStories] = useState([]);
@@ -67,13 +67,9 @@ const AdminStories = (props) => {
                 <p>Title: {adminNote.title}</p>
                 <p>Story: {adminNote.story}</p>
                 <p>Tags: {adminNote.tags}</p>
-                <button
-                  style={{ margin: "20px", fontSize: "1.2rem" }}
-                  class="color"
-                  onClick={() => deleteStory(adminNote)}
-                >
+                <AdminButton onClick={() => deleteStory(adminNote)}>
                   Delete
-                </button>
+                </AdminButton>
               </div>
             </AdminDiv>
           ))}
