@@ -101,6 +101,7 @@ const Login = (props) => {
             onChange={inputChange}
             required
           />
+          {errors.username.length > 0 ? <p>{errors.username}</p> : null}
           <label for="password">Password:</label>
           <input
             class="centerlog"
