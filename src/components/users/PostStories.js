@@ -105,6 +105,7 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.story}
               />
+              {errors.story.length > 0 ? <p>{errors.story}</p> : null}
               <label class="space" for="tags">
                 Tags:
               </label>
