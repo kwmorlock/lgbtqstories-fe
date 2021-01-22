@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import AdminHeader from "./AdminHeader";
+import { AdminInput } from "./AdminStyles";
 
 const UserList = (props) => {
   const [users, setUsers] = useState([]);
@@ -50,8 +51,7 @@ const UserList = (props) => {
       <div>
         <div>
           <form>
-            <input
-              class="center"
+            <AdminInput
               onChange={changeHandler}
               type="text"
               placeholder="Search Users"
