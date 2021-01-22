@@ -113,7 +113,7 @@ const Login = (props) => {
             onChange={inputChange}
             required
           />
-
+          {errors.password.length > 0 ? <p>{errors.password}</p> : null}
           <button
             class="color"
             style={{
