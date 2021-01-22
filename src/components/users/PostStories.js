@@ -118,6 +118,7 @@ const PostStories = (props) => {
                 onChange={handleChange}
                 value={addedStory.tags}
               />
+              {errors.tags.length > 0 ? <p>{errors.tags}</p> : null}
               <button
                 class="color"
                 style={{
