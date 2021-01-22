@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import AdminHeader from "./AdminHeader";
+import { AdminInput } from "./AdminStyles";
 
 const AdminStories = (props) => {
   const [adminNote, setStories] = useState([]);
@@ -50,8 +51,7 @@ const AdminStories = (props) => {
       <div>
         <div>
           <form>
-            <input
-              class="center"
+            <AdminInput
               onChange={changeHandler}
               type="text"
               placeholder="Search Tags"
