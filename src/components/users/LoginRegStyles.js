@@ -11,3 +11,8 @@ export const TitleDiv = styled.div`
   align-items: center;
   font-size: 3rem;
 `;
+
+export const Title = styled.p`
+  font-size: 3rem;
+  margin-top: -30px;
+`;
