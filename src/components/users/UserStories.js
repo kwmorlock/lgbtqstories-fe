@@ -9,6 +9,7 @@ import {
   ColDiv,
   H3Text,
   Input,
+  TextArea,
 } from "./StoriesStyles";
 
 const initialStory = {
@@ -98,8 +99,7 @@ const UserStory = (props) => {
                     }
                     value={storyToEdit.title}
                   />
-                  <textarea
-                    class="center"
+                  <TextArea
                     type="text"
                     name="story"
                     id="story"
