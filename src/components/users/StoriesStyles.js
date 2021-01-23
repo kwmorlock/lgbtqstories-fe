@@ -6,3 +6,7 @@ export const PostDiv = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const TextDiv = styled.div`
+  color: white;
+`;
