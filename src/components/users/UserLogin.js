@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import Header from "../Header";
+import { MainDiv } from "./LoginRegStyles";
 
 const Login = (props) => {
   const [userData, setUserData] = useState({
@@ -66,12 +67,7 @@ const Login = (props) => {
   return (
     <>
       <Header />
-      <div
-        style={{
-          margin: "12%",
-        }}
-        class="whitetext"
-      >
+      <MainDiv>
         <div
           class="col"
           style={{
@@ -126,7 +122,7 @@ const Login = (props) => {
             Login
           </button>
         </form>
-      </div>
+      </MainDiv>
     </>
   );
 };
