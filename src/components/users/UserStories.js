@@ -2,7 +2,13 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import StoriesHeader from "./StoriesHeader";
-import { UserStoriesDiv, MainButton, EditDiv, ColDiv } from "./StoriesStyles";
+import {
+  UserStoriesDiv,
+  MainButton,
+  EditDiv,
+  ColDiv,
+  H3Text,
+} from "./StoriesStyles";
 
 const initialStory = {
   id: null,
@@ -80,7 +86,7 @@ const UserStory = (props) => {
             <EditDiv>
               <form onSubmit={saveEdit}>
                 <ColDiv>
-                  <h3 class="whitetext">Edit Story</h3>
+                  <H3Text>Edit Story</H3Text>
                   <input
                     class="center"
                     type="text"

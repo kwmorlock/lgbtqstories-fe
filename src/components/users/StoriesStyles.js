@@ -195,9 +195,13 @@ export const MainButton = styled.button`
 `;
 
 export const EditDiv = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-margin: 20px auto;
- width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  width: 70%;
+`;
+
+export const H3Text = styled.h3`
+  color: white;
 `;
