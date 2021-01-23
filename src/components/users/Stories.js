@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import StoriesHeader from "./StoriesHeader";
-import { Input } from "./StoriesStyles";
+import { Input, StoriesDiv } from "./StoriesStyles";
 
 const UserStories = (props) => {
   const [stories, setStories] = useState([]);
@@ -52,22 +52,13 @@ const UserStories = (props) => {
 
         <div>
           {stories.map((stories) => (
-            <div
-              class="colors"
-              key={stories.id}
-              style={{
-                margin: "20px auto",
-                width: "40%",
-                backgroundColor: "hotpink",
-                border: "3px solid purple",
-              }}
-            >
+            <StoriesDiv key={stories.id}>
               <div key={stories.id}>
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
                 <p>Tags: {stories.tags}</p>
               </div>
-            </div>
+            </StoriesDiv>
           ))}
         </div>
       </div>
