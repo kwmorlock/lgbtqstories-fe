@@ -87,9 +87,7 @@ const PostStories = (props) => {
                 value={addedStory.title}
               />
               {errors.title.length > 0 ? <p>{errors.title}</p> : null}
-              <label class="space" for="story">
-                Story:
-              </label>
+              <PostLabel for="story">Story:</PostLabel>
               <textarea
                 class="center"
                 type="text"
@@ -100,9 +98,7 @@ const PostStories = (props) => {
                 value={addedStory.story}
               />
               {errors.story.length > 0 ? <p>{errors.story}</p> : null}
-              <label class="space" for="tags">
-                Tags:
-              </label>
+              <PostLabel for="tags">Tags:</PostLabel>
               <input
                 class="center"
                 type="text"
