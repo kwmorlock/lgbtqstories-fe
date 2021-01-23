@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import Header from "../Header";
-import { MainDiv, TitleDiv, Title, Form, Input } from "./LoginRegStyles";
+import {
+  MainDiv,
+  TitleDiv,
+  Title,
+  Form,
+  Input,
+  Button,
+} from "./LoginRegStyles";
 
 const Login = (props) => {
   const [userData, setUserData] = useState({
@@ -72,7 +79,6 @@ const Login = (props) => {
           {" "}
           <Title>Login</Title>
         </TitleDiv>
-
         <Form onSubmit={loginSubmit}>
           <label for="username">Username:</label>
           <Input
@@ -96,17 +102,9 @@ const Login = (props) => {
             required
           />
           {errors.password.length > 0 ? <p>{errors.password}</p> : null}
-          <button
-            class="color"
-            style={{
-              width: "80px",
-              height: "40px",
-            }}
-            disabled={buttonDisabled}
-            type="submit"
-          >
+          <Button disabled={buttonDisabled} type="submit">
             Login
-          </button>
+          </Button>
         </Form>
       </MainDiv>
     </>
