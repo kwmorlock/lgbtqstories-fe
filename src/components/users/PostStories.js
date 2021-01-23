@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
 import * as yup from "yup";
+import { PostDiv } from "./StoriesStyles";
 
 const PostStories = (props) => {
   const storyId = window.localStorage.getItem("id");
@@ -71,12 +72,7 @@ const PostStories = (props) => {
   return (
     <>
       <StoriesHeader />
-      <div
-        class="col"
-        style={{
-          margin: "8%",
-        }}
-      >
+      <PostDiv>
         <div class="whitetext">
           <form onSubmit={handleSubmit} class="col">
             <div class="col">
@@ -134,7 +130,7 @@ const PostStories = (props) => {
             </div>
           </form>
         </div>
-      </div>
+      </PostDiv>
     </>
   );
 };
