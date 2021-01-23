@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
 import * as yup from "yup";
-import { PostDiv, TextDiv, Form } from "./StoriesStyles";
+import { PostDiv, TextDiv, Form, ColDiv } from "./StoriesStyles";
 
 const PostStories = (props) => {
   const storyId = window.localStorage.getItem("id");
@@ -75,7 +75,7 @@ const PostStories = (props) => {
       <PostDiv>
         <TextDiv>
           <Form onSubmit={handleSubmit}>
-            <div class="col">
+            <ColDiv>
               <label class="space" for="title">
                 Title:
               </label>
@@ -127,7 +127,7 @@ const PostStories = (props) => {
               >
                 Add Story
               </button>
-            </div>
+            </ColDiv>
           </Form>
         </TextDiv>
       </PostDiv>
