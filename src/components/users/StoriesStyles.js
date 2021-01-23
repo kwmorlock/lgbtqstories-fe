@@ -31,3 +31,8 @@ export const Input = styled.input`
   text-align: center;
   margin: 2%;
 `;
+
+export const TextArea = styled.textarea`
+  text-align: center;
+  margin: 2%;
+`;

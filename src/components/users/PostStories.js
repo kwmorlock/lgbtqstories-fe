@@ -9,6 +9,7 @@ import {
   ColDiv,
   PostLabel,
   Input,
+  TextArea,
 } from "./StoriesStyles";
 
 const PostStories = (props) => {
@@ -94,8 +95,7 @@ const PostStories = (props) => {
               />
               {errors.title.length > 0 ? <p>{errors.title}</p> : null}
               <PostLabel for="story">Story:</PostLabel>
-              <textarea
-                class="center"
+              <TextArea
                 type="text"
                 name="story"
                 id="story"
