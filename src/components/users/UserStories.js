@@ -8,6 +8,7 @@ import {
   EditDiv,
   ColDiv,
   H3Text,
+  Input,
 } from "./StoriesStyles";
 
 const initialStory = {
@@ -87,8 +88,7 @@ const UserStory = (props) => {
               <form onSubmit={saveEdit}>
                 <ColDiv>
                   <H3Text>Edit Story</H3Text>
-                  <input
-                    class="center"
+                  <Input
                     type="text"
                     name="title"
                     id="title"
@@ -109,8 +109,7 @@ const UserStory = (props) => {
                     }
                     value={storyToEdit.story}
                   />
-                  <input
-                    class="center"
+                  <Input
                     type="text"
                     name="tags"
                     id="tags"
