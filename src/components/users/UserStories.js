@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import StoriesHeader from "./StoriesHeader";
+import { UserStoriesDiv } from "./StoriesStyles";
 
 const initialStory = {
   id: null,
@@ -62,16 +63,7 @@ const UserStory = (props) => {
       <div>
         <div>
           {stories.map((stories) => (
-            <div
-              class="colors"
-              key={stories.id}
-              style={{
-                margin: "20px auto",
-                width: "30%",
-                backgroundColor: "hotpink",
-                border: "3px solid purple",
-              }}
-            >
+            <UserStoriesDiv key={stories.id}>
               <div key={stories.id}>
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
@@ -91,7 +83,7 @@ const UserStory = (props) => {
                   Delete
                 </button>
               </div>
-            </div>
+            </UserStoriesDiv>
           ))}
 
           {edit && (
