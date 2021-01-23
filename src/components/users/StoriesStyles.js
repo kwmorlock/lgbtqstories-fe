@@ -193,3 +193,11 @@ export const MainButton = styled.button`
     violet
   ); /* Standard syntax (must be last) */
 `;
+
+export const EditDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px auto;
+ width: 70%;
+`;
