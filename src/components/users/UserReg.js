@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import Header from "../Header";
+import { MainDiv } from "./LoginRegStyles";
 
 const Register = (props) => {
   const [userData, setUserData] = useState({
@@ -80,12 +81,7 @@ const Register = (props) => {
   return (
     <>
       <Header />
-      <div
-        style={{
-          margin: "12%",
-        }}
-        class="whitetext"
-      >
+      <MainDiv>
         <div
           class="col"
           style={{
@@ -161,7 +157,7 @@ const Register = (props) => {
           to 10 seconds of waiting before it redirects to login after
           registering.
         </p>
-      </div>
+      </MainDiv>
     </>
   );
 };
