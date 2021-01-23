@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import StoriesHeader from "./StoriesHeader";
-import { UserStoriesDiv } from "./StoriesStyles";
+import { UserStoriesDiv, MainButton } from "./StoriesStyles";
 
 const initialStory = {
   id: null,
@@ -68,20 +68,10 @@ const UserStory = (props) => {
                 <p>Title: {stories.title}</p>
                 <p>Story: {stories.story}</p>
                 <p>Tags: {stories.tags}</p>
-                <button
-                  style={{ margin: "20px", fontSize: "1.2rem" }}
-                  class="color"
-                  onClick={() => editStory(stories)}
-                >
-                  Edit
-                </button>
-                <button
-                  style={{ margin: "20px", fontSize: "1.2rem" }}
-                  class="color"
-                  onClick={() => deleteStory(stories)}
-                >
+                <MainButton onClick={() => editStory(stories)}>Edit</MainButton>
+                <MainButton onClick={() => deleteStory(stories)}>
                   Delete
-                </button>
+                </MainButton>
               </div>
             </UserStoriesDiv>
           ))}
