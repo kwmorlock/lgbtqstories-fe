@@ -10,6 +10,7 @@ import {
   PostLabel,
   Input,
   TextArea,
+  PostButton,
 } from "./StoriesStyles";
 
 const PostStories = (props) => {
@@ -114,18 +115,9 @@ const PostStories = (props) => {
                 value={addedStory.tags}
               />
               {errors.tags.length > 0 ? <p>{errors.tags}</p> : null}
-              <button
-                class="color"
-                style={{
-                  width: "80px",
-                  height: "40px",
-                  marginTop: "5%",
-                }}
-                type="submit"
-                disabled={buttonDisabled}
-              >
+              <PostButton type="submit" disabled={buttonDisabled}>
                 Add Story
-              </button>
+              </PostButton>
             </ColDiv>
           </Form>
         </TextDiv>

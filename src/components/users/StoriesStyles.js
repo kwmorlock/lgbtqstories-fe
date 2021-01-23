@@ -36,3 +36,42 @@ export const TextArea = styled.textarea`
   text-align: center;
   margin: 2%;
 `;
+
+export const PostButton = styled.button`
+  width: 80px;
+  height: 40px;
+  margin-top: 5%;
+  background: hotpink;
+  background: -webkit-linear-gradient(
+    right,
+    violet,
+    lightblue,
+    cyan,
+    lightblue,
+    violet
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    left,
+    violet,
+    lightblue,
+    cyan,
+    lightblue,
+    violet
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    left,
+    violet,
+    lightblue,
+    cyan,
+    lightblue,
+    violet
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to left,
+    violet,
+    lightblue,
+    cyan,
+    lightblue,
+    violet
+  ); /* Standard syntax (must be last) */
+`;
