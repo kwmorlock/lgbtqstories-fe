@@ -17,8 +17,13 @@ export const Title = styled.p`
   margin-top: -30px;
 `;
 
-export const LoginForm = styled.form`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+export const Input = styled.input`
+  text-align: center;
+  margin: 1%;
 `;
