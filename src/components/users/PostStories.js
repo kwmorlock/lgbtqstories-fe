@@ -2,7 +2,14 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
 import * as yup from "yup";
-import { PostDiv, TextDiv, Form, ColDiv, PostLabel } from "./StoriesStyles";
+import {
+  PostDiv,
+  TextDiv,
+  Form,
+  ColDiv,
+  PostLabel,
+  Input,
+} from "./StoriesStyles";
 
 const PostStories = (props) => {
   const storyId = window.localStorage.getItem("id");
@@ -77,8 +84,7 @@ const PostStories = (props) => {
           <Form onSubmit={handleSubmit}>
             <ColDiv>
               <PostLabel for="title">Title:</PostLabel>
-              <input
-                class="center"
+              <Input
                 type="text"
                 name="title"
                 id="title"
@@ -99,8 +105,7 @@ const PostStories = (props) => {
               />
               {errors.story.length > 0 ? <p>{errors.story}</p> : null}
               <PostLabel for="tags">Tags:</PostLabel>
-              <input
-                class="center"
+              <Input
                 type="text"
                 name="tags"
                 id="tags"

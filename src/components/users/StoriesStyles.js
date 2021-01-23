@@ -26,3 +26,8 @@ export const ColDiv = styled.div`
 export const PostLabel = styled.label`
   margin: 5%;
 `;
+
+export const Input = styled.input`
+  text-align: center;
+  margin: 2%;
+`;
