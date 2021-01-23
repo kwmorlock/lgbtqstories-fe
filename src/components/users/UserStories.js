@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import "../comp.css";
 import StoriesHeader from "./StoriesHeader";
-import { UserStoriesDiv, MainButton, EditDiv } from "./StoriesStyles";
+import { UserStoriesDiv, MainButton, EditDiv, ColDiv } from "./StoriesStyles";
 
 const initialStory = {
   id: null,
@@ -79,7 +79,7 @@ const UserStory = (props) => {
           {edit && (
             <EditDiv>
               <form onSubmit={saveEdit}>
-                <div class="col">
+                <ColDiv>
                   <h3 class="whitetext">Edit Story</h3>
                   <input
                     class="center"
@@ -128,7 +128,7 @@ const UserStory = (props) => {
                   >
                     cancel
                   </button>
-                </div>
+                </ColDiv>
               </form>
             </EditDiv>
           )}
