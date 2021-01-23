@@ -10,3 +10,9 @@ export const PostDiv = styled.div`
 export const TextDiv = styled.div`
   color: white;
 `;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
