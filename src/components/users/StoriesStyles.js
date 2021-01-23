@@ -22,3 +22,7 @@ export const ColDiv = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
+export const PostLabel = styled.label`
+  margin: 5%;
+`;
