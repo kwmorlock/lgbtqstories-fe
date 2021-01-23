@@ -9,6 +9,7 @@ import {
   Form,
   Input,
   Button,
+  Disclaimer,
 } from "./LoginRegStyles";
 
 const Register = (props) => {
@@ -131,15 +132,11 @@ const Register = (props) => {
             Register
           </Button>
         </Form>
-        <p
-          style={{
-            fontSize: "2rem",
-          }}
-        >
+        <Disclaimer>
           Important note, back end goes to sleep without use, and might take up
           to 10 seconds of waiting before it redirects to login after
           registering.
-        </p>
+        </Disclaimer>
       </MainDiv>
     </>
   );

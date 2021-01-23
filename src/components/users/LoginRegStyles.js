@@ -66,3 +66,7 @@ export const Button = styled.button`
     violet
   ); /* Standard syntax (must be last) */
 `;
+
+export const Disclaimer = styled.p`
+  font-size: 2rem;
+`;
