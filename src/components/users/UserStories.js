@@ -10,6 +10,7 @@ import {
   H3Text,
   Input,
   TextArea,
+  SecondaryButton,
 } from "./StoriesStyles";
 
 const initialStory = {
@@ -119,20 +120,10 @@ const UserStory = (props) => {
                     }
                     value={storyToEdit.tags}
                   />
-                  <button
-                    style={{ margin: "10px", fontSize: "1.2rem" }}
-                    class="color"
-                    type="submit"
-                  >
-                    save
-                  </button>
-                  <button
-                    style={{ margin: "10px", fontSize: "1.2rem" }}
-                    class="color"
-                    onClick={() => setEdit(false)}
-                  >
+                  <SecondaryButton type="submit">save</SecondaryButton>
+                  <SecondaryButton onClick={() => setEdit(false)}>
                     cancel
-                  </button>
+                  </SecondaryButton>
                 </ColDiv>
               </form>
             </EditDiv>
