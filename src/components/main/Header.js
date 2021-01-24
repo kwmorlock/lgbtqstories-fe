@@ -6,7 +6,7 @@ import {
   ButtonDiv,
   HeaderButton,
   HeaderLink,
-} from "./HeaderStyles";
+} from "../HeaderStyles";
 
 const Header = () => {
   return (

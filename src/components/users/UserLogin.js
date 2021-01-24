@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as yup from "yup";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
-import Header from "../Header";
+import Header from "../main/Header";
 import {
   MainDiv,
   TitleDiv,

@@ -6,7 +6,7 @@ import PrivateRoute from "./utils/privateRoute";
 import UserStories from "./components/users/Stories";
 import PostStories from "./components/users/PostStories";
 import UserStory from "./components/users/UserStories";
-import MainPage from "./components/MainPage";
+import MainPage from "./components/main/MainPage";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminStories from "./components/admin/AdminStories";
 import UserList from "./components/admin/UserList";
