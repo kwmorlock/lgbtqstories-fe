@@ -10,7 +10,7 @@ import MainPage from "./components/main/MainPage";
 import AdminLogin from "./components/admin/AdminLogin";
 import AdminStories from "./components/admin/AdminStories";
 import UserList from "./components/admin/UserList";
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (

@@ -11,7 +11,7 @@ import {
 const AdminHeader = () => {
   const logout = () => {
     localStorage.clear();
-    window.location.href = "/#/adminlogin";
+    window.location.href = "/adminlogin";
   };
   return (
     <>
