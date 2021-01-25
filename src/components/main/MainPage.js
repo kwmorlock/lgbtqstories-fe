@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import { MainDiv, MainH1 } from "../MainPageStyles";
+import { MainDiv, MainH1 } from "../styles/MainPageStyles";
 
 const MainPage = () => {
   return (
