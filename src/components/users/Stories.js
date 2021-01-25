@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import StoriesHeader from "./StoriesHeader";
-import { Input, StoriesDiv } from "./StoriesStyles";
+import { Input, StoriesDiv } from "../styles/StoriesStyles";
 
 const UserStories = (props) => {
   const [stories, setStories] = useState([]);

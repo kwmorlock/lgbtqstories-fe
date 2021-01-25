@@ -10,7 +10,7 @@ import {
   Input,
   Button,
   Disclaimer,
-} from "./LoginRegStyles";
+} from "../styles/LoginRegStyles";
 
 const Register = (props) => {
   const [userData, setUserData] = useState({

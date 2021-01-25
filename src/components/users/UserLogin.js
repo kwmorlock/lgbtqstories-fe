@@ -9,7 +9,7 @@ import {
   Form,
   Input,
   Button,
-} from "./LoginRegStyles";
+} from "../styles/LoginRegStyles";
 
 const Login = (props) => {
   const [userData, setUserData] = useState({

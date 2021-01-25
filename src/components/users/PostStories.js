@@ -11,7 +11,7 @@ import {
   Input,
   TextArea,
   PostButton,
-} from "./StoriesStyles";
+} from "../styles/StoriesStyles";
 
 const PostStories = (props) => {
   const storyId = window.localStorage.getItem("id");

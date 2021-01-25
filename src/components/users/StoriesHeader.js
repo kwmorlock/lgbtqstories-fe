@@ -6,7 +6,7 @@ import {
   ButtonDiv,
   HeaderButton,
   HeaderLink,
-} from "./StoriesHeaderStyles";
+} from "../styles/StoriesHeaderStyles";
 
 const StoriesHeader = () => {
   const logout = () => {

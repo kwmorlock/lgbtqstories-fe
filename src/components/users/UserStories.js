@@ -10,7 +10,7 @@ import {
   Input,
   TextArea,
   SecondaryButton,
-} from "./StoriesStyles";
+} from "../styles/StoriesStyles";
 
 const initialStory = {
   id: null,
