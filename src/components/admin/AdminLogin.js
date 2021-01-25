@@ -9,7 +9,7 @@ import {
   LoginForm,
   LoginButton,
   LoginInput,
-} from "./AdminLoginStyles";
+} from "../styles/AdminLoginStyles";
 
 const AdminLogin = (props) => {
   const [userData, setUserData] = useState({

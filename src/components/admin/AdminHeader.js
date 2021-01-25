@@ -6,7 +6,7 @@ import {
   ButtonDiv,
   HeaderButton,
   HeaderLink,
-} from "./AdminHeaderStyles";
+} from "../styles/AdminHeaderStyles";
 
 const AdminHeader = () => {
   const logout = () => {

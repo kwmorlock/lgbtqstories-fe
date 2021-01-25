@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { axiosWithAuth } from "../../utils/axiosWithAuth";
 import AdminHeader from "./AdminHeader";
-import { AdminInput, AdminDiv, AdminButton } from "./AdminStyles";
+import { AdminInput, AdminDiv, AdminButton } from "../styles/AdminStyles";
 
 const AdminStories = (props) => {
   const [adminNote, setStories] = useState([]);
